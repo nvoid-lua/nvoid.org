@@ -57,4 +57,4 @@ Installing a [nerd font](https://www.nerdfonts.com/) is recommended. Otherwise s
 
 Nvoid ships with many themes. The default theme is `onedarker`.
 
-You may switch themes with this mapping: `<leader> + fc`.
+You may switch themes with this mapping: `Space` `f` `c`.
