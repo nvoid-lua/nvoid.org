@@ -21,6 +21,10 @@ module.exports = {
         text: "Acknowledgements",    
         link: "/acknowledgements/",
       },  
+      {
+        text: "About Me",    
+        link: "/about/",
+      },  
     ],
     repo: "https://github.com/ysfgrgO7/nvoid",
     docsBranch: "master",
@@ -29,6 +33,7 @@ module.exports = {
       "/": getSideBar("/", "Getting Started", true),
       "/configuration/": getSideBar("configuration", "Configuration"),
       "/acknowledgements/": getSideBar("acknowledgements", "Acknowledgements"),
+      "/about/": getSideBar("about", "About Me"),
     },
   },
 };
