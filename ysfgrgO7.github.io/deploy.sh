@@ -3,7 +3,7 @@
 set -e
 npm run docs:build
 cd docs/.vuepress/dist
-echo 'www.nvoid.xyz' > CNAME
+# echo 'www.nvoid.xyz' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
