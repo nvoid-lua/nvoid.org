@@ -13,7 +13,7 @@ Nvoid ships with a sane default config for you to build on top of. Features incl
 
 ## Extensible
 
-Just because Nvoid has an opinion doesn't mean you need to share it. Every builtin plugin can be toggled on or off in the `nv-config.lua` file. This is the place to add your own plugins, keymaps, autocommands, leader bindings and all other custom settings.
+Just because Nvoid has an opinion doesn't mean you need to share it. Every builtin plugin can be toggled on or off in the `nvoidrc.lua` file. This is the place to add your own plugins, keymaps, autocommands, leader bindings and all other custom settings.
 
 ## Fast
 

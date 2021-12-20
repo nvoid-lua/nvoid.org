@@ -18,6 +18,10 @@ module.exports = {
         link: "/configuration/",
       },
       {
+        text: "Features",    
+        link: "/Features/",
+      },  
+      {
         text: "Acknowledgements",    
         link: "/acknowledgements/",
       },  
@@ -32,6 +36,7 @@ module.exports = {
     sidebar: {
       "/": getSideBar("/", "Getting Started", true),
       "/configuration/": getSideBar("configuration", "Configuration"),
+      "/Features/": getSideBar("Features", "Features"),
       "/acknowledgements/": getSideBar("acknowledgements", "Acknowledgements"),
       "/about/": getSideBar("about", "About Me"),
     },
