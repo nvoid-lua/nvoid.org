@@ -11,7 +11,7 @@
 ## Install
 ### Install in one command
 ```shell
-bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/NVOID-Install.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/installer.sh)"
 ```
 ### Manual Install
 ```shell
