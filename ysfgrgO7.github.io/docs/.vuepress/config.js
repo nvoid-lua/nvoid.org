@@ -7,6 +7,11 @@ module.exports = {
   description: "Documentation for Nvoid",
   head: [["link", { rel: "icon", href: "/assets/logo.svg" }]],
   home: "/languages",
+  plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }]
+  ],
   themeConfig: {
     navbar: [
       {
@@ -31,6 +36,7 @@ module.exports = {
       },  
     ],
     repo: "https://github.com/ysfgrgO7/nvoid",
+    docsRepo: "https://github.com/ysfgrgO7/ysfgrgo7.github.io",
     docsBranch: "master",
     docsDir: "docs",
     sidebar: {
