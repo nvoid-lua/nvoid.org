@@ -6,10 +6,6 @@ From the repo:
 
 ## Installing a font
 
-### Video Explanation
-
-[Installing fonts with included icon sets](https://www.youtube.com/watch?v=fR4ThXzhQYI&t=364s)
-
 ### Easy Installer
 
 Visit [this repo](https://github.com/ronniedroid/getnf) for an easy way to install nerd fonts.

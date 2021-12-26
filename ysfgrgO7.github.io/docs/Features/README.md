@@ -40,7 +40,10 @@ nvoid ships with 2 styles:
 #### [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 Syntax highlighting engine
 <img :src="$withBase('/assets/nvoid_treesitter.png')" alt="Treesitter scrot">
+<div align="center">
+
 left `on` right `off`
+</div>
 
 ### Some screen shots
 #### Nvoid style
@@ -49,14 +52,10 @@ left `on` right `off`
 in the `~/.config/nvim/lua/nvoidrc.lua` 
 
 ```lua
-local M = {}
-
 M.ui = {
   theme = 'onedarker',
   statusline = 'nvoid',
 }
-
-return M
 ```
 
 #### Vscode
@@ -65,12 +64,8 @@ return M
 in the `~/.config/nvim/lua/nvoidrc.lua` 
 
 ```lua
-local M = {}
-
 M.ui = {
   theme = 'darkplus',
   statusline = 'vscode',
 }
-
-return M
 ```
