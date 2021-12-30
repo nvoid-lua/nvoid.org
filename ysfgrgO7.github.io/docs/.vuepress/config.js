@@ -36,7 +36,7 @@ module.exports = {
       },  
     ],
     repo: "https://github.com/ysfgrgO7/nvoid",
-    docsRepo: "https://github.com/ysfgrgO7/ysfgrgo7.github.io",
+    docsRepo: "https://github.com/ysfgrgO7/ysfgrgo7.github.io.src",
     docsBranch: "master",
     docsDir: "docs",
     sidebar: {
