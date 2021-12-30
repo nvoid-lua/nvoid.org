@@ -51,7 +51,7 @@ To install a Language Server for your language:
 Sometimes the language server for your language will not have an obvious name. For instance, the language server for ruby is solargraph. Metals is the language server for scala, etc. To find the corresponding language server for your language [look here](https://github.com/kabouzeid/nvim-lspinstall)
 
 ## Nerd Fonts
-Installing a [nerd font](https://www.nerdfonts.com/) is recommended. Otherwise some symbols won't be rendered properly. For more information go to the [configuration section ](./configuration/04-nerd-fonts.md).
+Installing a [nerd font](https://www.nerdfonts.com/) is recommended. Otherwise some symbols won't be rendered properly. For more information go to the [configuration section ](./configuration/05-nerd-fonts.md).
 
 ## Theming
 
