@@ -4,7 +4,7 @@
      description: 'Docs for Nvoid',
      themeConfig: {
        nav: [
-         { text: 'Getting Started', link: '/get-started/01-after-install' },
+         { text: 'Getting Started', link: '/get-started/' },
          { text: 'Configuration', link: '/configuration/' },
          { text: 'Features', link: '/features/' },
          { text: "Acknowledgements", link: "/acknowledgements/", },  
