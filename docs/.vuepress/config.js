@@ -1,6 +1,7 @@
  module.exports = {
      plugins: ['@vuepress/back-to-top', '@vuepress/medium-zoom'],
      title: 'Nvoid',
+     theme: 'default-prefers-color-scheme',
      description: 'Docs for Nvoid',
      themeConfig: {
        nav: [
