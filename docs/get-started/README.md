@@ -1,8 +1,7 @@
 # Installation
 ## Pre-requisites
 
-<details><summary>Neovim 0.5.0+</summary>
-<div>
+::: details Neovim 0.5.0+
 
 ### NeoVim installation options
 
@@ -40,8 +39,7 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ```
-</div>
-</details>
+:::
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 - `git` & other basic Linux CLI tools

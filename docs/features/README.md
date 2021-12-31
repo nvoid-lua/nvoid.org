@@ -5,10 +5,7 @@
 #### [`packer.nvim`](https://github.com/wbthomason/packer.nvim)
 Plugin manager written in lua
 <img :src="$withBase('/assets/nvoid_packer.png')" alt="Packer scrot">
-<div align="center">
-
 `PackerStatus` cmd
-</div>
 
 #### [`LSP`](https://github.com/neovim/nvim-lspconfig)
 Nvoid take's advantage of [`language server protocol`](https://microsoft.github.io/language-server-protocol/) which provides better completion and by using `:LspInstall <language name>` to add the language to nvoid.
@@ -40,10 +37,7 @@ nvoid ships with 2 styles:
 #### [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 Syntax highlighting engine
 <img :src="$withBase('/assets/nvoid_treesitter.png')" alt="Treesitter scrot">
-<div align="center">
-
 left `on` right `off`
-</div>
 
 ### Some screen shots
 #### Nvoid style

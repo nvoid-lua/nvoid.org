@@ -1,0 +1,15 @@
+{
+  "name": "nvoid.org",
+  "version": "1.0.0",
+  "description": "Docs for nvoid",
+  "main": "index.js",
+  "author": "Youssef",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.5"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
