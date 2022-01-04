@@ -1,11 +1,12 @@
 # Configuration
 
-You can configure Nvoid by using the configuration file located in `~/.config/nvim/lua/nvoidrc.lua`
+You can configure Nvoid by using the configuration file located in `~/.config/nvim/lua/custom/nvoidrc.lua`
 
 First run that in the terminal  
 ```bash
-touch ~/.config/nvim/lua/nvoidrc.lua
-cd ~/.config/nvim/lua
+mkdir ~/.config/nvim/lua/custom/
+touch ~/.config/nvim/lua/custom/nvoidrc.lua
+cd ~/.config/nvim/lua/custom/
 nvim nvoidrc.lua
 ```
 and start by adding the following: 
