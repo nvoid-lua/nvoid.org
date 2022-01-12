@@ -1,4 +1,5 @@
 # General Settings
+
 in the your `nvoidrc.lua` add the following:
 
 ```lua
@@ -22,4 +23,5 @@ M.options = {
   show_mode = false,
 }
 ```
+
 start editing :D
