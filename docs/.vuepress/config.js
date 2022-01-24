@@ -1,5 +1,9 @@
  module.exports = {
-     plugins: ['@vuepress/back-to-top', '@vuepress/medium-zoom'],
+     plugins: [
+      '@vuepress/back-to-top', 
+      '@vuepress/medium-zoom',
+      'vuepress-plugin-code-copy',
+    ],
      title: 'Nvoid',
      theme: 'default-prefers-color-scheme',
      description: 'Docs for Nvoid',
