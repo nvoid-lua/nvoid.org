@@ -5,8 +5,6 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Action            | Key          |
 | ----------------- | ------------ |
 | Edit config       | leader + E   |
-| Show Message      | leader + m   |
-| Quit              | leader + q   |
 | Write             | leader + w   |
 | Write and Quit    | leader + x   |
 | Vertical Split    | ctrl + w + v |
@@ -17,11 +15,11 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Move Window up    | ctrl + k     |
 
 ## Plugins related mappings
-| Action   | Key        |
-| -------- | ---------- |
-| Comment  | leader + / |
-| Alpha    | leader + d |
-| NvimTree | leader + e |
+| Action    | Key        |
+| --------- | ---------- |
+| Comment   | leader + / |
+| Dashboard | leader + ; |
+| NvimTree  | leader + e |
 
 ### Buffer
 | Action               | Key                           |
@@ -36,12 +34,14 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Action                       | Key            |
 | ---------------------------- | -------------- |
 | Telescope File Browser       | leader + f + b |
-| Telescope ColorScheme        | leader + f + c |
+| Telescope Theme              | leader + f + c |
 | Telescope Find File          | leader + f + f |
 | Telescope cmd Help           | leader + f + H |
 | Telescope History            | leader + f + h |
+| Telescope Key maps           | leader + f + k |
+| Telescope Media Files        | leader + f + m |
 | Telescope Options            | leader + f + o |
-| Telescope Treesitter symbols | leader + f + t |
+| Telescope file types         | leader + f + t |
 | Telescope Find Word          | leader + f + w |
 
 ### Git
@@ -59,40 +59,26 @@ you can hit the `leader` key (by default space) which opens `which-key`
 ### LSP
 | Action                         | Key            |
 | ------------------------------ | -------------- |
-| LSP Compile                    | leader + l + c |
-| LSP Document Diagnostic        | leader + l + D |
-| LSP Diagnostic                 | leader + l + d |
-| LSP Highlight                  | leader + l + h |
-| LSP Installer Info             | leader + l + I |
+| LSP Diagnostics                | leader + l + d |
 | LSP Info                       | leader + l + i |
+| LSP Installer Info             | leader + l + I |
 | LSP Rename                     | leader + l + r |
-| LSP Trouble Toggle             | leader + l + T |
-| LSP Trouble Toggle In Document | leader + l + t |
+| LSP Trouble Toggle             | leader + l + t |
 
 ### Packer
 | Action         | Key            |
 | -------------- | -------------- |
-| Packer Clean   | leader + p + c |
-| Packer Compile | leader + p + C |
+| packer clean   | leader + p + c |
 | Packer Install | leader + p + i |
 | Packer Sync    | leader + p + s |
 | Packer Status  | leader + p + S |
+| Packer Update  | leader + p + u |
 
 ### Session
 | Action       | Key            |
 | ------------ | -------------- |
 | Session Load | leader + s + l |
 | Session Save | leader + s + s |
-
-### Terminal
-| Action       | Key            |
-| ------------ | -------------- |
-| Lazy Git     | leader + t + g |
-| Htop         | leader + t + h |
-| Ncdu         | leader + t + n |
-| Python       | leader + t + p |
-| Toggle Split | leader + t + s |
-| Toggle       | leader + t + t |
 
 ### Better Escape
 | Action         | Key     |
