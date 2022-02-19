@@ -6,5 +6,5 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:ysfgrgO7/ysfgrgO7.github.io.git master
+git push -f git@github.com:nvoid-lua/nvoid.org master
 cd -
