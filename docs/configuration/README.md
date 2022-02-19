@@ -9,3 +9,10 @@ mkdir ~/.config/nvim/lua/custom/
 cd ~/.config/nvim/lua/custom
 cp -r ~/.config/nvim/example/example_nvoidrc.lua ~/.config/nvim/lua/custom/nvoidrc.lua
 ```
+
+then as you go on you will add the config between
+```lua
+local M = {}
+M.<CONFIG>
+return M
+```

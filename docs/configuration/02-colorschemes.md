@@ -5,7 +5,7 @@
 To switch color schemes on the fly, type the following command:
 
 ```vim
-:Telescope colorscheme
+:Telescope themes
 ```
 
 You can also press `Space` `f` `c` to cycle through colorschemes with a preview.
@@ -14,14 +14,9 @@ To change the color scheme permanently, modify `nvoidrc.lua`
 
 ```lua
 M.ui = {
-  theme = 'doom-one',   -- 'onedarker' 'gruvbox' 'dracula' 'doom-one' 'tokyonight' 'nord'
+  	theme = "catppuccin", -- "catppuccin" "classic-dark" "nord" "onedark" "solarized" "tokyodark" "uwu"
 }
 ```
-
-## Installing colorschemes
-
-[This is a list](https://github.com/rockerBOO/awesome-neovim#colorscheme) of colorschemes with tree-sitter support
-
 ## Transparent Windows
 
 If you're using transparent windows enable this setting
@@ -34,14 +29,35 @@ M.ui = {
 That enables the following settings
 
 ```lua
-local fg = require("nvoid.core.utils").fg
-local bg = require("nvoid.core.utils").bg
+local colors = require("nvoid.colors").get()
+local ui = require("nvoid.core.utils").load_config().ui
+local black = colors.black
+local blue = colors.blue
 local grey = colors.grey
+local one_bg = colors.one_bg
+local fg = require("nvoid.core.utils").fg
+local fg_bg = require("nvoid.core.utils").fg_bg
+local bg = require("nvoid.core.utils").bg
 
-if config.ui.transparency then
-   bg("Normal", "NONE")
-   bg("Folded", "NONE")
-   fg("Folded", "NONE")
-   fg("Comment", grey)
+if ui.transparency then
+	bg("Normal", "NONE")
+	bg("Folded", "NONE")
+	fg("Folded", "NONE")
+	fg("Comment", grey)
+	bg("NormalFloat", "NONE")
+	bg("NvimTreeNormal", "NONE")
+	bg("NvimTreeNormalNC", "NONE")
+	bg("NvimTreeStatusLineNC", "NONE")
+	bg("NvimTreeVertSplit", "NONE")
+	fg("NvimTreeVertSplit", grey)
+	bg("TelescopeBorder", "NONE")
+	bg("TelescopePrompt", "NONE")
+	bg("TelescopeResults", "NONE")
+	bg("TelescopePromptBorder", "NONE")
+	bg("TelescopePromptNormal", "NONE")
+	bg("TelescopeNormal", "NONE")
+	bg("TelescopePromptPrefix", "NONE")
+	fg("TelescopeBorder", one_bg)
+	fg_bg("TelescopeResultsTitle", black, blue)
 end
 ```

@@ -31,7 +31,9 @@
             '02-colorschemes',
             '03-lsp',
             '04-treesitter',
-            '05-nerd-fonts',
+            '05-plugins',
+            '06-mappings',
+            '07-nerd-fonts'
           ],
           '/features/' : [
             '/features/',

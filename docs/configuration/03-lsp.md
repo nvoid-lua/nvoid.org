@@ -11,3 +11,8 @@ M.lsp = {
 }
 ```
 by default nvoid ships with sumneko_lua
+
+## Formaters
+- for `lua` you can use `stylua`
+- for `python` you can use `black`
+- for the web dev you can use `prettier`
