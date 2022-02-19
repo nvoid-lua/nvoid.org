@@ -11,12 +11,11 @@
        nav: [
          { text: 'Getting Started', link: '/get-started/' },
          { text: 'Configuration', link: '/configuration/' },
-         { text: 'Features', link: '/features/' },
          { text: "Acknowledgements", link: "/acknowledgements/", },  
          { text: "About Me", link: "/about/", },  
        ],
-       repo: "https://github.com/ysfgrgO7/nvoid",
-       docsRepo: "https://github.com/ysfgrgO7/ysfgrgO7.github.io.src",
+       repo: "https://github.com/nvoid-lua/nvoid",
+       docsRepo: "https://github.com/nvoid-lua/ysfgrgO7.github.io.src",
        docsBranch: "master",
        docsDir: "docs",
        sidebar: {
@@ -32,10 +31,6 @@
             '04-treesitter',
             '05-nerd-fonts',
         ],
-        '/features/' : [
-           '/features/',
-           '01-mappings',
-         ],
         '/acknowledgements/' : [
            '/acknowledgements/',
          ],
