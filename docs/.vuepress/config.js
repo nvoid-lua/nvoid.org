@@ -7,10 +7,12 @@
      title: 'Nvoid',
      theme: 'default-prefers-color-scheme',
      description: 'Docs for Nvoid',
+     head: [["link", { rel: "icon", href: "/assets/nvoid_logo.png" }]],
      themeConfig: {
        nav: [
          { text: 'Getting Started', link: '/get-started/' },
          { text: 'Configuration', link: '/configuration/' },
+         { text: 'Features', link: '/features/' },
          { text: "Acknowledgements", link: "/acknowledgements/", },  
          { text: "About Me", link: "/about/", },  
        ],
@@ -30,12 +32,16 @@
             '03-lsp',
             '04-treesitter',
             '05-nerd-fonts',
-        ],
+          ],
+          '/features/' : [
+            '/features/',
+            // '01-mappings',
+         ],
         '/acknowledgements/' : [
-           '/acknowledgements/',
+            '/acknowledgements/',
          ],
         '/about/' : [
-           '/about/',
+            '/about/',
          ],
        } 
     }
