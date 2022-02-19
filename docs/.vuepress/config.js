@@ -35,7 +35,7 @@
           ],
           '/features/' : [
             '/features/',
-            // '01-mappings',
+            '01-mappings',
          ],
         '/acknowledgements/' : [
             '/acknowledgements/',
