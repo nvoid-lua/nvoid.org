@@ -19,6 +19,7 @@
        repo: "https://github.com/nvoid-lua/nvoid",
        docsRepo: "https://github.com/nvoid-lua/ysfgrgO7.github.io.src",
        docsBranch: "master",
+       overrideTheme: 'dark',
        docsDir: "docs",
        sidebar: {
          '/get-started/' : [
