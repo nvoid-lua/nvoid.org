@@ -22,9 +22,9 @@
        overrideTheme: 'dark',
        docsDir: "docs",
        sidebar: {
-         '/get-started/' : [
-           '/get-started/',
-           '01-after-install'
+          '/get-started/' : [
+            '/get-started/',
+            '01-after-install'
           ],
           '/configuration/' : [
             '/configuration/',
