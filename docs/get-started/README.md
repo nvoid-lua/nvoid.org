@@ -43,11 +43,9 @@ sudo apt-get install neovim
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 - `git` & other basic Linux CLI tools
+-  `node` to install additional language servers
 ### Semi-optional dependencies
-- `node` **Node.js** is required for many Language Servers (LSPs)
-- `ranger` Some file management alongside nvimtree
-- `lazygit` Some git stuff
-- [`ripgrep`](https://github.com/BurntSushi/ripgrep) is required for grep searching with _Telescope_
+- `pynvim` and [`fd`](https://github.com/sharkdp/fd)
 ## Install
 ### Install in one command
 ```shell
