@@ -1,3 +1,4 @@
+# About Me
 <h3 align="center">
   Welcome. I'm Youssef. A 14 years old kid who loves programming !
 </h3>
@@ -9,7 +10,7 @@
     <a href="https://daringfireball.net/projects/markdown/"><img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?logo=markdown&logoColor=white"></a>
 </h3>
 
-# Most Used software
+## Most Used software
 <h3 align="center">
     <a href="http://archlinux.org"><img alt="Arch Linux" src="https://img.shields.io/badge/Arch%20Linux-1793D1.svg?logo=arch-linux&logoColor=white"></a>
     <a href="https://brave.com/"><img alt="Brave" src="https://img.shields.io/badge/-Brave-FB542B?logo=brave&logoColor=white"></a>
@@ -18,7 +19,7 @@
     <a href="https://www.vim.org/"><img alt="Vim" src="https://img.shields.io/badge/Vim-019833?logo=vim&logoColor=white"></a>
 </h3>
 
-# Github Stats
+## Github Stats
 <h3 align="center">
     <a href="https://github.com/ysfgrgo7/"><img alt="ysf's github stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ysfgrgo7&show_icons=true&count_private=true&theme=gotham"></a>
     <a href="https://github.com/ysfgrgO7/"><img alt="ysf's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ysfgrgo7&langs_count=8&layout=compact&theme=gotham&border=true" height="192px"/></a>
