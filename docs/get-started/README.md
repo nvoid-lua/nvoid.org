@@ -1,7 +1,7 @@
 # Installation
 ## Pre-requisites
 
-::: details Neovim 0.6.0+
+::: details Neovim 0.7.0+
 
 ### NeoVim installation options
 
