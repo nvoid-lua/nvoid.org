@@ -2,7 +2,7 @@
 home: true
 actionText: Get Started
 actionLink: /get-started/
-subActionText: Install
+subActionText: Configuration
 subActionLink: /configuration/01-settings.html
 heroText: NVOID
 features:
