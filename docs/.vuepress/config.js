@@ -5,7 +5,7 @@
       'vuepress-plugin-code-copy',
     ],
      title: 'Nvoid',
-     theme: 'default-prefers-color-scheme',
+     theme: "vt",
      description: 'Docs for Nvoid',
      head: [["link", { rel: "icon", href: "/assets/nvoid_logo.png" }]],
      themeConfig: {
@@ -19,7 +19,7 @@
        repo: "https://github.com/nvoid-lua/nvoid",
        docsRepo: "https://github.com/nvoid-lua/ysfgrgO7.github.io.src",
        docsBranch: "master",
-       overrideTheme: 'dark',
+       enableDarkMode: true,
        docsDir: "docs",
        sidebar: {
           '/get-started/' : [

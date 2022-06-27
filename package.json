@@ -8,14 +8,14 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.5",
     "@vuepress/plugin-medium-zoom": "^1.9.5",
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-theme-vt": "^0.4.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
