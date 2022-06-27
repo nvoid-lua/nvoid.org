@@ -1,8 +1,8 @@
 ---
 home: true
-actionText: Get Started →
+actionText: Get Started
 actionLink: /get-started/
-heroImage: https://user-images.githubusercontent.com/94284073/174487743-9716985a-1369-4a66-8de9-a384d12a66a3.png
+heroText: NVOID
 features:
 - title: Opinionated
   details: Nvoid equipped with features that comes with modern IDEs like autocompletion, integrated terminal, file explorer, fuzzy finder, LSP.
