@@ -9,6 +9,7 @@
      description: 'Docs for Nvoid',
      head: [["link", { rel: "icon", href: "/assets/nvoid_logo.png" }]],
      themeConfig: {
+       logo: "/assets/nvoid_logo.png",
        nav: [
          { text: 'Getting Started', link: '/get-started/' },
          { text: 'Configuration', link: '/configuration/' },
