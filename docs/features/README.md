@@ -23,27 +23,25 @@ A completion engine plugin for neovim written in Lua. Completion sources are ins
 A fuzzy finder written in lua
 <img :src="$withBase('/assets/telescope.png')" alt="Packer scrot">
 
-
 ## [`Dashboard`](https://github.com/glepnir/dashboard-nvim)
+
 A light start screen for nvim
 <img :src="$withBase('/assets/dashboard.png')" alt="Packer scrot">
-
 
 ## [`LuaLine`](https://github.com/nvim-lualine/lualine.nvim)
 
 A blazing fast and easy to configure Neovim statusline written in Lua
 
 nvoid ships with 5 styles:
-+ Default
-<img :src="$withBase('/assets/statusline_def.png')" alt="Packer scrot">
-+ Lunarvim
-<img :src="$withBase('/assets/statusline_lunarvim.png')" alt="Packer scrot">
-+ Minimal
-<img :src="$withBase('/assets/statusline_minimal.png')" alt="Packer scrot">
-+ Nvchad
-<img :src="$withBase('/assets/statusline_nvchad.png')" alt="Packer scrot">
-+ Nvoid
-<img :src="$withBase('/assets/statusline_nvoid.png')" alt="Packer scrot">
+
+- Default
+  <img :src="$withBase('/assets/statuslines/default.png')" alt="Packer scrot">
+- Evil
+  <img :src="$withBase('/assets/statuslines/evil.png')" alt="Packer scrot">
+- Minimal
+  <img :src="$withBase('/assets/statuslines/minimal.png')" alt="Packer scrot">
+- Nvoid
+  <img :src="$withBase('/assets/statuslines/nvoid.png')" alt="Packer scrot">
 
 ## [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 
