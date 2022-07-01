@@ -23,6 +23,11 @@ A completion engine plugin for neovim written in Lua. Completion sources are ins
 A fuzzy finder written in lua
 <img :src="$withBase('/assets/telescope.png')" alt="Packer scrot">
 
+## [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
+
+A file explorer tree for neovim written in lua
+<img :src="$withBase('/assets/nvim-tree.png')" alt="Packer scrot">
+
 ## [`Alpha`](https://github.com/goolord/alpha-nvim/)
 
 a lua powered greeter like vim-startify / dashboard-nvim
@@ -32,7 +37,7 @@ a lua powered greeter like vim-startify / dashboard-nvim
 
 A blazing fast and easy to configure Neovim statusline written in Lua
 
-nvoid ships with 5 styles:
+nvoid ships with 4 styles:
 
 - Default
   <img :src="$withBase('/assets/statuslines/default.png')" alt="Packer scrot">
@@ -42,6 +47,11 @@ nvoid ships with 5 styles:
   <img :src="$withBase('/assets/statuslines/minimal.png')" alt="Packer scrot">
 - Nvoid
   <img :src="$withBase('/assets/statuslines/nvoid.png')" alt="Packer scrot">
+
+## [`Bufferline.nvim`](https://github.com/akinsho/bufferline.nvim)
+
+A snazzy bufferline for Neovim
+<img :src="$withBase('/assets/bufferline.png')" alt="Packer scrot">
 
 ## [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 
