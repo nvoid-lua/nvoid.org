@@ -1,4 +1,5 @@
 # Installation
+
 ## Pre-requisites
 
 ::: details Neovim 0.7.0+
@@ -39,19 +40,37 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ```
+
 :::
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 - `git` & other basic Linux CLI tools
--  `node` to install additional language servers
+- `node` to install additional language servers
+
 ### Semi-optional dependencies
+
 - `pynvim` and [`fd`](https://github.com/sharkdp/fd)
+
 ## Install
+
+::: details After the Install
+
+When You launch `nvoid` for the first time you will get this error
+
+<img :src="$withBase('/assets/ERROR.png')" alt="Packer scrot">
+
+It's normal this will appear every time there is a notification on start
+
+:::
+
 ### Install in one command
+
 ```shell
 bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/installer.sh)"
 ```
+
 ### Manual Install
+
 ```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -59,6 +78,7 @@ git clone https://github.com/ysfgrgO7/nvoid.git ~/.config/nvim
 nvim -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 nvim
 ```
+
 ## Uninstall
 
 ```bash
