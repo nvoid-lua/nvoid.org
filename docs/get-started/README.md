@@ -55,7 +55,7 @@ sudo apt-get install neovim
 
 ::: details After the Install
 
-When You launch `nvoid` for the first time you will get this error
+When You launch `nvoid` for the first time you might get this error
 
 <img :src="$withBase('/assets/ERROR.png')" alt="Packer scrot">
 
