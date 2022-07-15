@@ -19,5 +19,5 @@ An <b class="gradient">Elegant</b> VuePress Theme
 :::
 
 ::: slot tagline
-A **Neovim *IDE*** written and configured in *`lua`*, aims to be fast ,minimal and a beautiful UI
+A **Neovim *IDE*** written and configured in *`lua`*, aims to be fast"0.03s to be exact" ,minimal and a beautiful UI
 :::
