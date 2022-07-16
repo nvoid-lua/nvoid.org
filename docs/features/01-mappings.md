@@ -1,86 +1,81 @@
 # Mappings
 you can hit the `leader` key (by default space) which opens `which-key`
 
-## Non plugin mappings
-| Action            | Key          |
-| ----------------- | ------------ |
-| Edit config       | leader + E   |
-| Write             | leader + w   |
-| Write and Quit    | leader + x   |
-| Vertical Split    | ctrl + w + v |
-| Split             | ctrl + w + s |
-| Move Window left  | ctrl + h     |
-| Move Window Right | ctrl + l     |
-| Move Window down  | ctrl + j     |
-| Move Window up    | ctrl + k     |
+## Non leader mappings
+| Action            | Key                           |
+| ----------------- | ------------------------------|
+| Vertical Split    | ctrl + w + v                  |
+| Split             | ctrl + w + s                  |
+| Move Window Left  | ctrl + h                      |
+| Move Window Right | ctrl + l                      |
+| Move Window Down  | ctrl + j                      |
+| Move Window Up    | ctrl + k                      |
+| Write (save)      | ctrl + s                      |
+| hori Resize -1    | ctrl + Up                     |
+| hori Resize +1    | ctrl + Down                   |
+| vert Resize -2    | ctrl + Left                   |
+| vert Resize +2    |ctrl + Right                   |
+| Quit              | ctrl + q                      |
+| Buffer Next       | tab                           |
+| Buffer Previous   | shift + tab                   |
+| Buffer Close      | shift + x                     |
+| Esc InsertMode    | jk (kj)                       |
 
-## Plugins related mappings
-| Action    | Key        |
-| --------- | ---------- |
-| Comment   | leader + / |
-| Dashboard | leader + ; |
-| NvimTree  | leader + e |
 
-### Buffer
-| Action               | Key                           |
-| -------------------- | ----------------------------- |
-| Buffer Next          | tab  (leader + b + j)         |
-| Buffer Previous      | shift + tab  (leader + b + k) |
-| Buffer Close         | shift + x (leader + b + c)    |
-| Buffer Move Next     | leader + b + n                |
-| Buffer Move Previous | leader + b + p                |
+## Leader mappings
 
-### Find (Telescope)
-| Action                       | Key            |
-| ---------------------------- | -------------- |
-| Telescope File Browser       | leader + f + b |
-| Telescope Theme              | leader + f + c |
-| Telescope Find File          | leader + f + f |
-| Telescope cmd Help           | leader + f + H |
-| Telescope History            | leader + f + h |
-| Telescope Key maps           | leader + f + k |
-| Telescope Media Files        | leader + f + m |
-| Telescope Options            | leader + f + o |
-| Telescope file types         | leader + f + t |
-| Telescope Find Word          | leader + f + w |
+### Leader ..... 
+| Action              | Key                           |
+| --------------------| ------------------------------|
+| Comment             | leader + /                    |
+| Alpha (startscreen) | leader + ;                    |
+| NvimTree            | leader + e                    |
+| Edit Config         | leader + E                    |
+| Toggle Git Signs    | leader + g                    |
+| New File            | leader + n                    |
+| Upadte Nvoid        | leader + u                    |
+| Write (Save)        | leader + w                    |
+| NvimTree            | leader + x                    |
 
-### Git
-| Action            | Key            |
-| ----------------- | -------------- |
-| Git Commits       | leader + g + c |
-| Git Toggle signs  | leader + g + g |
-| Git Next Hunk     | leader + g + j |
-| Git Previous Hunk | leader + g + k |
-| Git Blame         | leader + g + l |
-| Git Stage         | leader + g + S |
-| Git Status        | leader + g + s |
-| Git Unstage       | leader + g + U |
+### Leader + b .....
+| Action               | Key                             |
+| ---------------------| --------------------------------|
+| Next Buffer          | leader + b + j                  |
+| Previous Buffer      | leader + b + k                  |
+| Move Next Buffer     | leader + b + n                  |
+| Move Previous Buffer | leader + b + p                  |
+| Close Buffer         | leader + b + c                  |
 
-### LSP
-| Action                         | Key            |
-| ------------------------------ | -------------- |
-| LSP Diagnostics                | leader + l + d |
-| LSP Info                       | leader + l + i |
-| LSP Installer Info             | leader + l + I |
-| LSP Rename                     | leader + l + r |
-| LSP Trouble Toggle             | leader + l + t |
 
-### Packer
-| Action         | Key            |
-| -------------- | -------------- |
-| packer clean   | leader + p + c |
-| Packer Install | leader + p + i |
-| Packer Sync    | leader + p + s |
-| Packer Status  | leader + p + S |
-| Packer Update  | leader + p + u |
+### Leader + f .....
+| Action                     | Key                             |
+| ---------------------------| --------------------------------|
+| Telescope Types            | leader + f + t                  |
+| Telescope File browser     | leader + f + b                  |
+| Telescope History          | leader + f + h                  |
+| Telescope Find files       | leader + f + f                  |
+| Telescope Colorschemes     | leader + f + c                  |
+| Telescope Options          | leader + f + o                  |
+| Telescope Help             | leader + f + H                  |
+| Telescope Find In Document | leader + f + w                  |
+| Telescope Key Maps         | leader + f + k                  |
+| Telescope Media Files      | leader + f + m                  |
 
-### Session
-| Action       | Key            |
-| ------------ | -------------- |
-| Session Load | leader + s + l |
-| Session Save | leader + s + s |
+### Leader + l .....
+| Action             | Key                             |
+| -------------------| --------------------------------|
+| LSP Diagnostics    | leader + l + d                  |
+| LSP Info           | leader + l + i                  |
+| LSP Installer Info | leader + l + I                  |
+| LSP Rename         | leader + l + r                  |
+| LSP Format         | leader + l + f                  |
+| Toggle Trouble     | leader + l + t                  |
 
-### Better Escape
-| Action         | Key     |
-| -------------- | ------- |
-| esc insertmode | jk (kj) |
+### Leader + p .....
+| Action         | Key                             |
+| ---------------| --------------------------------|
+| Packer Compile | leader + p + c                  |
+| Packer Install | leader + p + i                  |
+| Packer Sync    | leader + p + s                  |
+| Packer Status  | leader + p + S                  |
+| Packer Upadte  | leader + p + u                  |
