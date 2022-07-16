@@ -26,7 +26,9 @@ A fuzzy finder written in lua
 ## [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
 
 A file explorer tree for neovim written in lua
-<img :src="$withBase('/assets/nvim-tree.png')" alt="Packer scrot">
+<h3 align="left">
+  <img :src="$withBase('/assets/nvim-tree.png')" alt="Packer scrot">
+</h3>
 
 ## [`Alpha`](https://github.com/goolord/alpha-nvim/)
 
