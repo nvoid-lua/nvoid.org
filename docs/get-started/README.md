@@ -66,7 +66,7 @@ It's normal this will appear every time there is a notification on start
 ### Install in one command
 
 ```shell
-bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/scripts/installer.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/scripts/installer.sh)"
 ```
 
 ### Manual Install
