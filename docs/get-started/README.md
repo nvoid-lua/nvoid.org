@@ -66,7 +66,7 @@ It's normal this will appear every time there is a notification on start
 ### Install in one command
 
 ```shell
-bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/installer.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/scripts/installer.sh)"
 ```
 
 ### Manual Install
@@ -82,6 +82,5 @@ nvim
 ## Uninstall
 
 ```bash
-rm -rf ~/.config/nvim/
-rm -rf ~/.local/share/nvim/
+rm -rf ~/.config/nvim/ ~/.local/share/nvim/
 ```
