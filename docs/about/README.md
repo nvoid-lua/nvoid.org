@@ -21,6 +21,7 @@
 
 ## Github Stats
 <h3 align="center">
-    <a href="https://github.com/ysfgrgo7/"><img alt="ysf's github stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ysfgrgo7&show_icons=true&count_private=true&theme=gotham"></a>
-    <a href="https://github.com/ysfgrgO7/"><img alt="ysf's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ysfgrgo7&langs_count=8&layout=compact&theme=gotham&border=true" height="192px"/></a>
+    <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ysfgrgO7&show_icons=true&theme=dark&locale=en&layout=Demo" alt="ashincoder" /></p>
+    <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ysfgrgO7&show_icons=true&theme=dark&locale=en" alt="ashincoder" /></p>
+    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ysfgrgO7&" alt="ysfgrgO7" /></p>
 </h3>
