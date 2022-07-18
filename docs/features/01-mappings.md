@@ -4,22 +4,22 @@ you can hit the `leader` key (by default space) which opens `which-key`
 ## Non leader mappings
 | Action            | Key                           |
 | ----------------- | ------------------------------|
-| Vertical Split    | ctrl + w + v                  |
-| Split             | ctrl + w + s                  |
-| Move Window Left  | ctrl + h                      |
-| Move Window Right | ctrl + l                      |
-| Move Window Down  | ctrl + j                      |
-| Move Window Up    | ctrl + k                      |
-| Write (save)      | ctrl + s                      |
-| hori Resize -1    | ctrl + Up                     |
-| hori Resize +1    | ctrl + Down                   |
-| vert Resize -2    | ctrl + Left                   |
-| vert Resize +2    |ctrl + Right                   |
-| Quit              | ctrl + q                      |
+| Buffer Close      | shift + x                     |
 | Buffer Next       | tab                           |
 | Buffer Previous   | shift + tab                   |
-| Buffer Close      | shift + x                     |
 | Esc InsertMode    | jk (kj)                       |
+| hori Resize +1    | ctrl + Down                   |
+| hori Resize -1    | ctrl + Up                     |
+| Move Window Down  | ctrl + j                      |
+| Move Window Left  | ctrl + h                      |
+| Move Window Right | ctrl + l                      |
+| Move Window Up    | ctrl + k                      |
+| Quit              | ctrl + q                      |
+| Split             | ctrl + w + s                  |
+| Vertical Split    | ctrl + w + v                  |
+| vert Resize +2    |ctrl + Right                   |
+| vert Resize -2    | ctrl + Left                   |
+| Write (save)      | ctrl + s                      |
 
 
 ## Leader mappings
@@ -27,55 +27,57 @@ you can hit the `leader` key (by default space) which opens `which-key`
 ### Leader ..... 
 | Action              | Key                           |
 | --------------------| ------------------------------|
-| Comment             | leader + /                    |
 | Alpha (startscreen) | leader + ;                    |
-| NvimTree            | leader + e                    |
+| Comment             | leader + /                    |
 | Edit Config         | leader + E                    |
-| Toggle Git Signs    | leader + g                    |
 | New File            | leader + n                    |
+| NvimTree            | leader + e                    |
+| Toggle Git Signs    | leader + g                    |
 | Upadte Nvoid        | leader + u                    |
+| Write and Quit      | leader + x                    |
 | Write (Save)        | leader + w                    |
-| NvimTree            | leader + x                    |
 
 ### Leader + b .....
 | Action               | Key                             |
 | ---------------------| --------------------------------|
-| Next Buffer          | leader + b + j                  |
-| Previous Buffer      | leader + b + k                  |
+| Close Buffer         | leader + b + c                  |
 | Move Next Buffer     | leader + b + n                  |
 | Move Previous Buffer | leader + b + p                  |
-| Close Buffer         | leader + b + c                  |
+| Next Buffer          | leader + b + j                  |
+| Previous Buffer      | leader + b + k                  |
 
 
 ### Leader + f .....
 | Action                     | Key                             |
 | ---------------------------| --------------------------------|
-| Telescope Types            | leader + f + t                  |
-| Telescope File browser     | leader + f + b                  |
-| Telescope History          | leader + f + h                  |
-| Telescope Find files       | leader + f + f                  |
 | Telescope Colorschemes     | leader + f + c                  |
-| Telescope Options          | leader + f + o                  |
-| Telescope Help             | leader + f + H                  |
+| Telescope File browser     | leader + f + b                  |
+| Telescope Find files       | leader + f + f                  |
 | Telescope Find In Document | leader + f + w                  |
+| Telescope Help             | leader + f + H                  |
+| Telescope History          | leader + f + h                  |
 | Telescope Key Maps         | leader + f + k                  |
 | Telescope Media Files      | leader + f + m                  |
+| Telescope Options          | leader + f + o                  |
+| Telescope Types            | leader + f + t                  |
 
 ### Leader + l .....
-| Action             | Key                             |
-| -------------------| --------------------------------|
-| LSP Diagnostics    | leader + l + d                  |
-| LSP Info           | leader + l + i                  |
-| LSP Installer Info | leader + l + I                  |
-| LSP Rename         | leader + l + r                  |
-| LSP Format         | leader + l + f                  |
-| Toggle Trouble     | leader + l + t                  |
+| Action                 | Key                             |
+|------------------------|---------------------------------|
+| Lsp code Actions       | leader + l + a                  |
+| LSP Diagnostics        | leader + l + d                  |
+| LSP Format             | leader + l + f                  |
+| LSP Info               | leader + l + i                  |
+| LSP Installer Info     | leader + l + I                  |
+| Lsp Range Code Actions | leader + l + A                  |
+| LSP Rename             | leader + l + r                  |
+| Toggle Trouble         | leader + l + t                  |
 
 ### Leader + p .....
 | Action         | Key                             |
 | ---------------| --------------------------------|
 | Packer Compile | leader + p + c                  |
 | Packer Install | leader + p + i                  |
-| Packer Sync    | leader + p + s                  |
 | Packer Status  | leader + p + S                  |
+| Packer Sync    | leader + p + s                  |
 | Packer Upadte  | leader + p + u                  |
