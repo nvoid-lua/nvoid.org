@@ -21,15 +21,13 @@ A completion engine plugin for neovim written in Lua. Completion sources are ins
 ## [`Cool UI`](https://github.com/CosmicNvim/cosmic-ui)
 
 Adds a popup window for .....
+
 ### Rename
-<img :src="$withBase('/assets/rename.png')" alt="Packer scrot">
-
 `leader` `l` `r`
-
+<img :src="$withBase('/assets/rename.png')" alt="Packer scrot">
 ### Code Actions
-<img :src="$withBase('/assets/codeactions.png')" alt="Packer scrot">
-
 `leader` `l` `a`
+<img :src="$withBase('/assets/codeactions.png')" alt="Packer scrot">
 
 ## [`Telescope`](https://github.com/nvim-telescope/telescope.nvim)
 
