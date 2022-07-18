@@ -18,10 +18,25 @@ Nvoid take's advantage of [`language server protocol`](https://microsoft.github.
 A completion engine plugin for neovim written in Lua. Completion sources are installed from external repositories and "sourced".
 <img :src="$withBase('/assets/cmp.png')" alt="Packer scrot">
 
+## [`Cool UI`](https://github.com/CosmicNvim/cosmic-ui)
+
+Adds a popup window for .....
+### Rename
+<img :src="$withBase('/assets/rename.png')" alt="Packer scrot">
+
+`leader` `l` `r`
+
+### Code Actions
+<img :src="$withBase('/assets/codeactions.png')" alt="Packer scrot">
+
+`leader` `l` `a`
+
 ## [`Telescope`](https://github.com/nvim-telescope/telescope.nvim)
 
 A fuzzy finder written in lua
 <img :src="$withBase('/assets/telescope.png')" alt="Packer scrot">
+
+`leader` `f` `f`
 
 ## [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
 
@@ -30,10 +45,14 @@ A file explorer tree for neovim written in lua
   <img :src="$withBase('/assets/nvim-tree.png')" alt="Packer scrot">
 </h3>
 
+`leader` `e`
+
 ## [`Alpha`](https://github.com/goolord/alpha-nvim/)
 
 a lua powered greeter like vim-startify / dashboard-nvim
 <img :src="$withBase('/assets/dashboard.png')" alt="Packer scrot">
+
+`leader` `;`
 
 ## [`LuaLine`](https://github.com/nvim-lualine/lualine.nvim)
 
