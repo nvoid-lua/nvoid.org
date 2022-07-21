@@ -2,15 +2,7 @@
 
 ## Switching colors
 
-To switch color schemes on the fly, type the following command:
-
-```vim
-:Telescope themes
-```
-
-You can also press `Space` `f` `c` to cycle through colorschemes with a preview.
-
-To change the color scheme permanently, modify `nvoidrc.lua`
+To change the color scheme you can modify `nvoidrc.lua`
 
 ```lua
 M.ui = {

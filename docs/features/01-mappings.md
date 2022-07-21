@@ -50,7 +50,6 @@ you can hit the `leader` key (by default space) which opens `which-key`
 ### Leader + f .....
 | Action                     | Key                             |
 | ---------------------------| --------------------------------|
-| Telescope Colorschemes     | leader + f + c                  |
 | Telescope File browser     | leader + f + b                  |
 | Telescope Find files       | leader + f + f                  |
 | Telescope Find In Document | leader + f + w                  |
