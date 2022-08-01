@@ -1,4 +1,14 @@
 # Lsp
+## Lsp Settings
+```lua
+M.lsp = {
+  document_highlight = true,
+  autoforamt = false,
+}
+```
+Document Highlight is the function that highlights the repeated variable
+Autoforamt Formats the document on save
+
 ## Adding language sever protocol
 you can add a new language by
 ```vim
@@ -6,7 +16,7 @@ you can add a new language by
 ```
 or add this in the `nvoidrc.lua`
 ```lua
-M.lsp = {
+M.lsp_add = {
   "<Name of language>",
 }
 ```

@@ -7,7 +7,6 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Buffer Close      | shift + x                     |
 | Buffer Next       | tab                           |
 | Buffer Previous   | shift + tab                   |
-| Esc InsertMode    | jk (kj)                       |
 | hori Resize +1    | ctrl + Down                   |
 | hori Resize -1    | ctrl + Up                     |
 | Move Window Down  | ctrl + j                      |
@@ -17,7 +16,7 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Quit              | ctrl + q                      |
 | Split             | ctrl + w + s                  |
 | Vertical Split    | ctrl + w + v                  |
-| vert Resize +2    |ctrl + Right                   |
+| vert Resize +2    | ctrl + Right                  |
 | vert Resize -2    | ctrl + Left                   |
 | Write (save)      | ctrl + s                      |
 
@@ -30,9 +29,8 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Alpha (startscreen) | leader + ;                    |
 | Comment             | leader + /                    |
 | Edit Config         | leader + E                    |
-| New File            | leader + n                    |
 | NvimTree            | leader + e                    |
-| Toggle Git Signs    | leader + g                    |
+| New File            | leader + n                    |
 | Upadte Nvoid        | leader + u                    |
 | Write and Quit      | leader + x                    |
 | Write (Save)        | leader + w                    |
@@ -59,6 +57,18 @@ you can hit the `leader` key (by default space) which opens `which-key`
 | Telescope Media Files      | leader + f + m                  |
 | Telescope Options          | leader + f + o                  |
 | Telescope Types            | leader + f + t                  |
+
+### Leader + g ......
+| Action                 | Key                             |
+| -----------------------| --------------------------------|
+| Gitsigns Toggle        | leader + g + g                  |
+| Gitsigns Next Hunk     | leader + g + j                  |
+| Gitsigns Previous Hunk | leader + g + k                  |
+| Gitsigns Blame         | leader + g + l                  |
+| Gitsigns Preview Hunk  | leader + g + p                  |
+| Gitsigns Reset Hunk    | leader + g + r                  |
+| Gitsigns Reset Buffer  | leader + g + R                  |
+| Gitsigns Stage Hunk    | leader + g + s                  |
 
 ### Leader + l .....
 | Action                 | Key                             |
