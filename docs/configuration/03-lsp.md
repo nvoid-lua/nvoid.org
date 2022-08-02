@@ -27,7 +27,7 @@ by default nvoid ships with sumneko_lua
 - for `python` you can use `black`
 - for the web dev you can use `prettier`
 
-# Adding new formatting/diagnostics
+## Adding new formatting/diagnostics
 
 you can add extra formatters/linters via null_ls
 
