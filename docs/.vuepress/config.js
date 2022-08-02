@@ -35,8 +35,7 @@
             '04-treesitter',
             '05-plugins',
             '06-mappings',
-            '07-formatting-diagnostics',
-            '08-nerd-fonts'
+            '07-nerd-fonts'
           ],
           '/features/' : [
             '/features/',
