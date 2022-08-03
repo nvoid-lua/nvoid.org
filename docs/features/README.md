@@ -45,33 +45,6 @@ A file explorer tree for neovim written in lua
 
 `leader` `e`
 
-## [`Alpha`](https://github.com/goolord/alpha-nvim/)
-
-a lua powered greeter like vim-startify / dashboard-nvim
-<img :src="$withBase('/assets/dashboard.png')" alt="Packer scrot">
-
-`leader` `;`
-
-## [`LuaLine`](https://github.com/nvim-lualine/lualine.nvim)
-
-A blazing fast and easy to configure Neovim statusline written in Lua
-
-nvoid ships with 4 styles:
-
-- Default
-  <img :src="$withBase('/assets/statuslines/default.png')" alt="Packer scrot">
-- Evil
-  <img :src="$withBase('/assets/statuslines/evil.png')" alt="Packer scrot">
-- Minimal
-  <img :src="$withBase('/assets/statuslines/minimal.png')" alt="Packer scrot">
-- Nvoid
-  <img :src="$withBase('/assets/statuslines/nvoid.png')" alt="Packer scrot">
-
-## [`Bufferline.nvim`](https://github.com/akinsho/bufferline.nvim)
-
-A snazzy bufferline for Neovim
-<img :src="$withBase('/assets/bufferline.png')" alt="Packer scrot">
-
 ## [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 
 Syntax highlighting engine
