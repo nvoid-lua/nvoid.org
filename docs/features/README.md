@@ -16,23 +16,16 @@ Nvoid take's advantage of [`language server protocol`](https://microsoft.github.
 ## [`cmp`](https://github.com/hrsh7th/nvim-cmp)
 
 A completion engine plugin for neovim written in Lua. Completion sources are installed from external repositories and "sourced".
-<img :src="$withBase('/assets/cmp.png')" alt="Packer scrot">
+<img :src="$withBase('/assets/cmp.png')" alt="Cmp scrot">
 
-## [`Cool UI`](https://github.com/CosmicNvim/cosmic-ui)
-
-Adds a popup window for .....
-
-### Rename
+## Rename
 `leader` `l` `r`
-<img :src="$withBase('/assets/rename.png')" alt="Packer scrot">
-### Code Actions
-`leader` `l` `a`
-<img :src="$withBase('/assets/codeactions.png')" alt="Packer scrot">
+<img :src="$withBase('/assets/rename.png')" alt="Rename scrot">
 
 ## [`Telescope`](https://github.com/nvim-telescope/telescope.nvim)
 
 A fuzzy finder written in lua
-<img :src="$withBase('/assets/telescope.png')" alt="Packer scrot">
+<img :src="$withBase('/assets/telescope.png')" alt="Telescope scrot">
 
 `leader` `f` `f`
 
@@ -40,7 +33,7 @@ A fuzzy finder written in lua
 
 A file explorer tree for neovim written in lua
 <h3 align="left">
-  <img :src="$withBase('/assets/nvim-tree.png')" alt="Packer scrot">
+  <img :src="$withBase('/assets/nvim-tree.png')" alt="Nvim Tree scrot">
 </h3>
 
 `leader` `e`
@@ -48,5 +41,5 @@ A file explorer tree for neovim written in lua
 ## [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 
 Syntax highlighting engine
-<img :src="$withBase('/assets/treesitter.png')" alt="Packer scrot">
+<img :src="$withBase('/assets/treesitter.png')" alt="Treesitter scrot">
 left `on` right `off`
