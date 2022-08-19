@@ -2,35 +2,38 @@
 
 You can add new plugin by adding that to the `nvoidrc.lua`
 ```lua
-M.plugins_add = {
+M.plugins = {
+  add = {
 	{
 		"username-orgnization/repo name",
 		config = function()
 			require("custom.<lua path to the config>")
 		end,
 	},
+  }
 }
 ```
 
 for example add this:
 ``` lua
-M.plugins_add = {
+M.plugins = {
+    add = {
+      -- ZenMode
+      {
+          "folke/zen-mode.nvim",
+          config = function()
+              require("custom.config.focus").zen()
+          end,
+      },
 
-	-- ZenMode
-	{
-		"folke/zen-mode.nvim",
-		config = function()
-			require("custom.config.focus").zen()
-		end,
-	},
-
-	-- Twilight
-	{
-		"folke/twilight.nvim",
-		config = function()
-			require("custom.config.focus").twilight()
-		end,
-	},
+      -- Twilight
+      {
+          "folke/twilight.nvim",
+          config = function()
+              require("custom.config.focus").twilight()
+          end,
+      },
+    }
 }
 ```
 then run this in to your shell
@@ -80,3 +83,26 @@ return M
 ```
 
 Then run `Packer Sync` in neovim or hit `space` `p` `s`
+
+You can remove some selected plugins through 
+```lua
+M.plugins = {
+  remove = {
+    alpha = false,
+    blankline = false,
+    colorizer = false,
+    gitsigns = false,
+    nvimtree = false,
+  },
+}
+```
+
+You can chang some nvimtree settings through
+```lua
+M.plugins = {
+  nvimtree = {
+    git = true,
+    indent_markers = true,
+  },
+}
+```

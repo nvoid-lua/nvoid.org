@@ -2,11 +2,15 @@
 ## Lsp Settings
 ```lua
 M.lsp = {
+  virtual_text = true,
   document_highlight = true,
   autoforamt = false,
 }
 ```
+Virtual Text Show the errors one screen
+
 Document Highlight is the function that highlights the repeated variable
+
 Autoforamt Formats the document on save
 
 ## Adding language sever protocol
@@ -16,8 +20,8 @@ you can add a new language by
 ```
 or add this in the `nvoidrc.lua`
 ```lua
-M.lsp_add = {
-  "<Name of language>",
+M.lsp = {
+  add = { "<Name of language>" },
 }
 ```
 by default nvoid ships with sumneko_lua
