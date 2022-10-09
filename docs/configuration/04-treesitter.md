@@ -4,21 +4,23 @@ you can add a new language by
 ```vim
 :TSInstall <Name of language>
 ```
-or add this in the `nvoidrc.lua`
+or add this in the `config.lua`
 ```lua
-M.ts_installed = {
-  "<Name of language>",
+nvoid.builtin.treesitter.ensure_installed = {
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "java",
+  "yaml",
 }
-```
-by default nvoid ships with :
-```
- bash
- lua
- c
- cpp
- css
- javascript
- json
- yaml
- python
+
+nvoid.builtin.treesitter.ignore_install = { "haskell" }
+nvoid.builtin.treesitter.highlight.enabled = true
 ```

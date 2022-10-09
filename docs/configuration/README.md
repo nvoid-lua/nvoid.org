@@ -1,17 +1,9 @@
 # Configuration
 
-You can configure Nvoid by using the configuration file located in `~/.config/nvim/lua/custom/nvoidrc.lua`
+You can configure Nvoid by using the configuration file located in `~/.config/nvoid/config.lua`
 
-First run that in the terminal
+Many Nvoid internal settings are exposed through the nvoid global object. To see a list of all available settings, run this command to generate an nv-settings.lua file.
 
-```bash
-cd ~/.config/nvim/lua/
-cp -r ../example ./custom 
-```
-
-then as you go on you will add the config between
-```lua
-local M = {}
-M.<CONFIG>
-return M
+```sh
+nvoid --headless +'lua require("nvoid.utils").generate_settings()' +qa && sort -o nv-settings.lua{,}
 ```

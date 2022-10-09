@@ -1,23 +1,21 @@
-# Adding New Key mapping
+# Keys 
+
+You can change the leader for nvoid through
+```lua
+nvoid.leader = "space"
+```
 
 You can add new leader command (New keybind) by adding that to the `nvoidrc.lua`
 ```lua
-M.whichkey_add = {
-   ["<The Key>"] = { "<cmd><The command to run>", "Name" }, 
-   "<The Key Group Name>" = {
-     name = "<Name of the group>",
-     <Key> = { "<cmd><The command to run>", "Name" }, 
-   },
+nvoid.builtin.which_key.mappings["Key"] = { "<cmd><The command to run>", "Name" }, 
+
+nvoid.builtin.which_key.mappings["key"] = {
+  name = "+Name",
+  key = { "<cmd>Command<cr>", "Name" },
 }
 ```
 
 for example lets add a keybinding for zen mode we added earlier: 
 ```lua
-M.whichkey_add = {
-	z = {
-		name = "Zen",
-		z = { "<cmd>ZenMode<cr>", "ZenMode" },
-		t = { "<cmd>Twilight<cr>", "Twilight" },
-	},
-}
+nvoid.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", "ZenMode" }
 ```
