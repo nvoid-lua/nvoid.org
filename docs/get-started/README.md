@@ -55,7 +55,7 @@ sudo apt-get install neovim
 ### Install in one command
 
 ```shell
-bash -c "$(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/scripts/installer.sh)"
+bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.sh)
 ```
 
 ## Uninstall

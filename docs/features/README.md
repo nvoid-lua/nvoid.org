@@ -2,6 +2,31 @@
 
 **Nvoid** comes with many features you find in a modern IDE
 
+## It's Fast
+here's a quick comparison
+### Nvoid(New)
+```
+Time (mean ± σ):      66.2 ms ±   3.9 ms    [User: 43.6 ms, System: 21.8 ms]
+Range (min … max):    56.0 ms …  76.0 ms    43 runs
+```
+### Nvoid(Old)
+```
+Time (mean ± σ):     121.3 ms ±   6.5 ms    [User: 89.0 ms, System: 31.4 ms]
+Range (min … max):   109.7 ms … 135.6 ms    21 runs
+```
+### Lunarvim
+```
+Time (mean ± σ):     196.2 ms ±   6.5 ms    [User: 130.6 ms, System: 63.4 ms]
+Range (min … max):   188.2 ms … 215.4 ms    15 runs
+```
+### Nvchad
+```
+Time (mean ± σ):      24.7 ms ±   3.3 ms    [User: 15.9 ms, System: 8.3 ms]
+Range (min … max):    20.4 ms …  32.6 ms    93 runs
+```
+
+These were run buy `hyperfine`
+
 ## [`packer.nvim`](https://github.com/wbthomason/packer.nvim)
 
 Plugin manager written in lua
