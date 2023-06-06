@@ -52,9 +52,3 @@ Sometimes the language server for your language will not have an obvious name. F
 
 ## Nerd Fonts
 Installing a [nerd font](https://www.nerdfonts.com/) is recommended. Otherwise some symbols won't be rendered properly. For more information go to the [configuration section ](./configuration/05-nerd-fonts.md).
-
-## Theming
-
-Nvoid ships with many themes. The default theme is `onedarker`.
-
-You may switch themes with this mapping: `Space` `f` `c`.

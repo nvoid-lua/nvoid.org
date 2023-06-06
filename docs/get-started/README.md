@@ -63,12 +63,19 @@ choco install neovim pwsh
 - `pynvim` and [`fd`](https://github.com/sharkdp/fd)
 
 ## Install
-
-### Install in one command
-
-```shell
+<code-group>
+<code-block title="#Linux/Unix" active>
+```bash
 bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.sh)
 ```
+</code-block>
+
+<code-block title="#Windows">
+```bash
+iwr https://raw.githubusercontent.com/nvoid-lua/nvoid/master/utils/installer/install.ps1 -UseBasicParsing | iex
+```
+</code-block>
+</code-group>
 
 ## Uninstall
 
