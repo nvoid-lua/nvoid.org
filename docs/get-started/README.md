@@ -1,8 +1,8 @@
 # Installation
 
-## Pre-requisites
+## Prerequisites
 
-::: details Neovim 0.8.0+
+::: details Neovim 0.9.0+
 
 ### NeoVim installation options
 
@@ -39,6 +39,18 @@ sudo pacman -S neovim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
+```
+
+### For Windows:
+#### First Install Chocolatey in an administrative-shell
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+#### Then install neovim and powershell 7
+```powershell
+choco install neovim pwsh
 ```
 
 :::
