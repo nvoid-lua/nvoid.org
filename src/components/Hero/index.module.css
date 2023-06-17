@@ -1,0 +1,120 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.buttons {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.button {
+  margin: 0 0.5rem;
+}
+.heroBanner {
+  padding-block: 2rem;
+  position: relative;
+  background-color: var(--primary-bg);
+  color: var(--primary-fg);
+  min-height: 50vh;
+}
+
+.heroTitle {
+  display: none;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  padding: 0;
+  border: none;
+  text-shadow: 0 0.1rem 0 rgba(255, 255, 255, 1), 0 0 1rem rgba(255, 255, 255, 0.9);
+}
+
+.heroDescription {
+  text-align: left;
+}
+
+.heroBanner > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heroContent {
+  flex: 0.45;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.heroImage {
+  flex: 0.55;
+}
+
+.heroImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 500px;
+}
+
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.toggleAnimations {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 3;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  --size: 3rem;
+  width: var(--size);
+  size: var(--size);
+  opacity: 0.45;
+  transition: opacity 300ms ease-in-out;
+}
+
+.toggleAnimations:active,
+.toggleAnimations:hover {
+  opacity: 1;
+}
+
+.toggleAnimations > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.toggleAnimations > svg path {
+  fill: var(--primary-fg);
+}
+.toggleAnimations > svg circle {
+  stroke: var(--primary-fg);
+
+}
+
+@media screen and (min-width: 996px) {
+  .heroTitle {
+    display: flex;
+  }
+  .heroBanner {
+    padding: 4rem 0 calc(4rem + 100px);
+  }
+  .heroBanner > .container {
+    flex-direction: row;
+  }
+  .heroImage > img {
+    max-width: max-content;
+  }
+  .heroContent {
+    max-width: unset;
+  }
+}

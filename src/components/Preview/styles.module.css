@@ -1,0 +1,91 @@
+.featBanner {
+  padding-block: 2rem;
+  position: relative;
+  background-color: var(--primary-bg);
+  color: var(--normal-black);
+  min-height: 1vh;
+}
+.container img {
+  margin-block: 1rem;
+  width: 100%;
+  max-width: var(--ifm-container-width-xl);
+  border-radius: 1rem;
+}
+
+.container {
+  padding-block: 1rem 1.5rem;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--primary-fg);
+  display: block;
+  cursor: pointer;
+}
+
+.dot:hover {
+  outline: 2px solid var(--ifm-color-primary);
+}
+
+.dot.active {
+  background-color: var(--primary-fg);
+  border: 2px solid transparent;
+}
+
+.btn {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--primary-bg);
+  border: 3px solid var(--primary-fg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+}
+
+.btn > svg path {
+  stroke: var(--primary-fg);
+}
+
+.btn:hover {
+  border: 3px solid var(--ifm-color-primary);
+}
+
+.btn:hover > svg path {
+  stroke: var(--ifm-color-primary);
+}
+
+.btn.prev {
+  transform: translate(-50%, calc(-50% - 1rem)) rotate(90deg);
+  left: 2rem;
+}
+
+.btn.next {
+  transform: translate(50%, calc(-50% - 1rem)) rotate(-90deg);
+  right: 2rem;
+}
+
+@media screen and (min-width: 996px) {
+  .btn.prev {
+    left: 1rem;
+  }
+  .btn.next {
+    right: 1rem;
+  }
+}

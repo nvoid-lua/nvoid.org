@@ -1,0 +1,25 @@
+.featBanner {
+  padding-block: 1rem;
+  padding-bottom: 0rem;
+  position: relative;
+  background-color: var(--normal-blue);
+  color: var(--normal-black);
+  min-height: 0vh;
+}
+.features {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 185px;
+  width: 185px;
+  margin-bottom: 1rem;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
