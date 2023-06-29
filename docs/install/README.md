@@ -71,6 +71,7 @@ choco install neovim pwsh
 - `pynvim` and [`fd`](https://github.com/sharkdp/fd)
 
 ## Release
+### Stable
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -87,6 +88,24 @@ bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/inst
 
 ```powershell
 iwr https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.ps1 -UseBasicParsing | iex
+```
+</TabItem>
+</Tabs>
+
+### Nightly
+
+<Tabs>
+<TabItem value="linux/macos" label="Linux/MacOs">
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid-nightly/main/utils/installer/install.sh)
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```powershell
+iwr https://raw.githubusercontent.com/nvoid-lua/nvoid-nightly/main/utils/installer/install.ps1 -UseBasicParsing | iex
 ```
 </TabItem>
 </Tabs>
