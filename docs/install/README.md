@@ -92,24 +92,6 @@ iwr https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/insta
 </TabItem>
 </Tabs>
 
-### Nightly
-
-<Tabs>
-<TabItem value="linux/macos" label="Linux/MacOs">
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid-nightly/main/utils/installer/install.sh)
-```
-
-</TabItem>
-<TabItem value="windows" label="Windows">
-
-```powershell
-iwr https://raw.githubusercontent.com/nvoid-lua/nvoid-nightly/main/utils/installer/install.ps1 -UseBasicParsing | iex
-```
-</TabItem>
-</Tabs>
-
 ## Uninstall
 
 You can remove Nvoid (including the configuration files) using the bundled `uninstall` script
