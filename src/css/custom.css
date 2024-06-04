@@ -9,17 +9,17 @@
 }
 
 html[data-theme="light"] {
-  --primary-bg: #eff1f5;
-  --primary-fg: #1e1d2d;
-  --normal-black: #282737;
-  --normal-red: #f38ba8;
-  --normal-green: #abe9b3;
-  --normal-yellow: #fae3b0;
-  --normal-blue: #96cdfb;
-  --normal-magenta: #cba6f7;
-  --normal-cyan: #89dceb;
-  --normal-white: #d9e0ee;
-  --bright-black: #383737;
+  --primary-bg: #f3f4f5;
+  --primary-fg: #1c2023;
+  --normal-black: #24282b;
+  --normal-red: #c79595;
+  --normal-green: #aec795;
+  --normal-yellow: #c7c795;
+  --normal-blue: #95aec7;
+  --normal-magenta: #ae95c7;
+  --normal-cyan: #9eb7d0;
+  --normal-white: #c7ccd1;
+  --bright-black: #3a3e41;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
   --bright-yellow: var(--normal-yellow);
@@ -29,8 +29,8 @@ html[data-theme="light"] {
   --bright-white: var(--primary-fg);
   --ifm-font-color-base: var(--primary-fg);
   --ifm-background-color: var(--primary-bg);
-  --ifm-color-primary: #89b4fa;
-  --ifm-color-primary-dark: #96cdfb;
+  --ifm-color-primary: #95aec7;
+  --ifm-color-primary-dark: #8ca5be;
   --ifm-color-primary-darker: var(--ifm-color-primary-dark);
   --ifm-navbar-background-color: var(--primary-bg);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -38,17 +38,17 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --primary-bg: #1e1d2d;
-  --primary-fg: #eff1f5;
-  --normal-black: #282737;
-  --normal-red: #f38ba8;
-  --normal-green: #abe9b3;
-  --normal-yellow: #fae3b0;
-  --normal-blue: #96cdfb;
-  --normal-magenta: #cba6f7;
-  --normal-cyan: #89dceb;
-  --normal-white: #d9e0ee;
-  --bright-black: #383737;
+  --primary-bg: #1c2023;
+  --primary-fg: #c7ccd1;
+  --normal-black: #24282b;
+  --normal-red: #c79595;
+  --normal-green: #aec795;
+  --normal-yellow: #c7c795;
+  --normal-blue: #95aec7;
+  --normal-magenta: #ae95c7;
+  --normal-cyan: #9eb7d0;
+  --normal-white: #c7ccd1;
+  --bright-black: #3a3e41;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
   --bright-yellow: var(--normal-yellow);
@@ -59,8 +59,8 @@ html[data-theme="dark"] {
   --ifm-font-color-base: var(--primary-fg);
   --ifm-background-color: var(--primary-bg);
   --ifm-background-surface-color: var(--primary-bg);
-  --ifm-color-primary: #89b4fa;
-  --ifm-color-primary-dark: #96cdfb;
+  --ifm-color-primary: #95aec7;
+  --ifm-color-primary-dark: #9eb7d0;
   --ifm-color-primary-darker: var(--ifm-color-primary-dark);
   --ifm-navbar-background-color: var(--normal-black);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
