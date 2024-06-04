@@ -20,6 +20,7 @@ html[data-theme="light"] {
   --normal-cyan: #9eb7d0;
   --normal-white: #c7ccd1;
   --bright-black: #3a3e41;
+  --Black: #161a1d;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
   --bright-yellow: var(--normal-yellow);
@@ -49,6 +50,7 @@ html[data-theme="dark"] {
   --normal-cyan: #9eb7d0;
   --normal-white: #c7ccd1;
   --bright-black: #3a3e41;
+  --Black: #161a1d;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
   --bright-yellow: var(--normal-yellow);
@@ -110,8 +112,8 @@ html[data-theme="dark"] {
 }
 
 .footer {
-  background-color: var(--normal-white);
-  color: var(--normal-black);
+  background-color: var(--Black);
+  color: var(--normal-white);
 }
 
 .navbar__toggle {
