@@ -35,6 +35,70 @@ nvoid.ui.hl_override = {
 }
 ```
 
+### Add Colorschemes
+you can add colorschemes at `~/.config/nvoid/lua/themes/` and any colorscheme you add will show on the `Telescope themes`
+the file should look like this 
+```lua
+local M = {}
+
+M.base_30 = {
+	white = "#hexcode",
+	darker_black = "#hexcode",
+	black = "#hexcode", --  nvim bg
+	black2 = "#hexcode",
+	one_bg = "#hexcode",
+	one_bg2 = "#hexcode", -- StatusBar (filename)
+	one_bg3 = "#hexcode",
+	grey = "#hexcode", -- Line numbers (shouldn't be base01?)
+	grey_fg = "#hexcode", -- Why this affects comments?
+	grey_fg2 = "#hexcode",
+	light_grey = "#hexcode",
+	red = "#hexcode", -- StatusBar (username)
+	baby_pink = "#hexcode",
+	pink = "#hexcode",
+	line = "#hexcode", -- for lines like vertsplit
+	green = "#hexcode", -- StatusBar (file percentage)
+	vibrant_green = "#hexcode",
+	nord_blue = "#hexcode", -- Mode indicator
+	blue = "#hexcode",
+	yellow = "#hexcode",
+	sun = "#hexcode",
+	purple = "#hexcode",
+	dark_purple = "#hexcode",
+	teal = "#hexcode",
+	orange = "#hexcode",
+	cyan = "#hexcode",
+	statusline_bg = "#hexcode",
+	lightbg = "#hexcode",
+	pmenu_bg = "#hexcode", -- Command bar suggestions
+	folder_bg = "#hexcode",
+}
+
+M.base_16 = {
+	base00 = "#hexcode", -- Default bg
+	base01 = "#hexcode", -- Lighter bg (status bar, line number, folding mks)
+	base02 = "#hexcode", -- Selection bg
+	base03 = "#hexcode", -- Comments, invisibles, line hl
+	base04 = "#hexcode", -- Dark fg (status bars)
+	base05 = "#hexcode", -- Default fg (caret, delimiters, Operators)
+	base06 = "#hexcode", -- Light fg (not often used)
+	base07 = "#hexcode", -- Light bg (not often used)
+	base08 = "#hexcode", -- Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+	base09 = "#hexcode", -- Integers, Boolean, Constants, XML Attributes, Markup Link Url
+	base0A = "#hexcode", -- Classes, Markup Bold, Search Text Background
+	base0B = "#hexcode", -- Strings, Inherited Class, Markup Code, Diff Inserted
+	base0C = "#hexcode", -- Support, regex, escape chars
+	base0D = "#hexcode", -- Function, methods, headings
+	base0E = "#hexcode", -- Keywords
+	base0F = "#hexcode", -- Deprecated, open/close embedded tags
+}
+
+M.type = "dark" -- or light
+
+return M
+```
+You can find more colorschemes at [NvChad/base46](https://github.com/NvChad/base46/tree/v2.5/lua/base46/themes)
+
 
 ## Statusline
 Nvoid use it's own statusline with 3 styles [(nvoid, minimal, evil)](/docs/features/ui#statusline) you can change them with:

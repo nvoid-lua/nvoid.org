@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Misc
 
-You can disable some rtp neovim plugins using `lazy` whick going to improve the startuptime
+You can disable some rtp neovim plugins using `lazy.nvim` whick going to improve the startuptime
 ```lua
 nvoid.lazy.opts.performance.rtp.disabled_plugins = {
   "2html_plugin",
