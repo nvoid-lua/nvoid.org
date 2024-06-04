@@ -1,10 +1,6 @@
 #!/bin/bash
 
 set -e
-cd ./docs/
-rm -rf configuration
-git clone https://github.com/nvoid-lua/nvoidocs.git configuration
-cd ../
 yarn clear
 yarn build
 cd ./build/
