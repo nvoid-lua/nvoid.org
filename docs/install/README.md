@@ -9,7 +9,7 @@ sidebar_position: 1
 
 <details>
 <summary>Neoivm 0.9.0+</summary>
-<h2 id="#heading-id">I'm a heading that will not show up in the TOC</h2>
+<h2 id="#heading-id">Installing Neoivm 0.9.0+</h2>
 
 ### NeoVim installation options
 
