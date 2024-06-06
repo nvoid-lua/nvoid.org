@@ -1,7 +1,7 @@
 :root {
   --ifm-code-font-size: 95%;
   --ifm-button-border-color: var(--ifm-color-primary);
-  --ifm-navbar-search-input-background-color: var(--bright-green);
+  --ifm-navbar-search-input-background-color: var(--bright-black);
   --ifm-navbar-search-input-color: var(--primary-fg);
   --ifm-navbar-search-input-placeholder-color: var(--bright-white);
   --ifm-color-emphasis-500: var(--bright-white);
@@ -70,7 +70,9 @@ html[data-theme="dark"] {
 }
 
 * {
-  transition: background-color 400ms ease-in-out, fill 400ms ease-in-out;
+  transition:
+    background-color 400ms ease-in-out,
+    fill 400ms ease-in-out;
 }
 
 .social {
