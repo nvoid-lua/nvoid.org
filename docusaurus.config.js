@@ -58,22 +58,55 @@ const config = {
       },
       items: [
         {
-          type: "doc",
-          docId: "install/README",
+          type: "search",
           position: "right",
-          label: "Docs",
         },
         {
-          position: "right",
+          label: "Docs",
+          type: "doc",
+          docId: "install/README",
+          position: "left",
+        },
+        {
           label: "Acknowledgements",
           to: "/ak",
+          position: "left",
         },
         ...github,
       ],
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Nvoid, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} nvoid-lua™,Built with Docusaurus.`,
+      links: [
+        {
+          items: [
+            {
+              label: "Install",
+              to: "docs/install",
+            },
+            {
+              label: "Configuration",
+              to: "docs/configuration",
+            },
+            {
+              label: "Acknowledgements",
+              to: "/ak",
+            },
+          ],
+        },
+        {
+          items: [
+            {
+              html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+                </a>
+              `,
+            },
+          ],
+        },
+      ],
     },
     prism: {
       theme: codeTheme,
