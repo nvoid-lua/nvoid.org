@@ -1,16 +1,19 @@
-#1E1D2D -- Bg dark
-#2f2e3e -- lighter bg
-#EFF1F5 -- fg
-#ccd3e1 -- light fg
-
-#282737 -- Black
-#383747 -- grey
-#414050 -- light grey
-#D9E0EE -- White
-#F8BD96 -- Orange
-#FAE3B0 -- Yellow
-#ABE9B3 -- Green
-#89DCEB -- Cyan
-#96CDFB -- Blue
-#CBA6F7 -- Magenta
-#F38BA8 -- Red
+## Ashes
+bg= #1c2023
+fg= #c7ccd1
+black= #272b2e
+red= #c79595
+green= #aec795
+yellow= #c7c795
+blue= #95aec7
+magenta= #a58cbe
+cyan= #9eb7d0
+white= #adb3ba
+black1= #303437
+red1= #c79595
+green1= #99c366
+yellow1= #d0d09e
+blue1= #8ca5be
+magenta1= #ae95c7
+cyan1= #9eb7d0
+white1= #f3f4f5
