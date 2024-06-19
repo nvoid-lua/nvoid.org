@@ -20,6 +20,21 @@
   min-height: 50vh;
 }
 
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 10px var(--primary-fg),
+      0 0 60px var(--primary-fg);
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 10px var(--primary-fg),
+      0 0 50px var(--primary-fg);
+  }
+}
+
 .heroTitle {
   display: none;
   font-weight: 800;
@@ -27,7 +42,10 @@
   font-size: 5rem;
   padding: 0;
   border: none;
-  text-shadow: 0 0.1rem 0 rgba(255, 255, 255, 1), 0 0 1rem rgba(255, 255, 255, 0.9);
+  animation: pulsate 1s ease-in-out infinite alternate;
+  /* text-shadow: */
+  /*   0 0 10px var(--primary-fg), */
+  /*   0 0 40px var(--primary-fg); */
 }
 
 .heroDescription {
@@ -60,7 +78,6 @@
   object-fit: contain;
   max-width: 500px;
 }
-
 
 @keyframes cursor-blink {
   50% {
@@ -98,7 +115,6 @@
 }
 .toggleAnimations > svg circle {
   stroke: var(--primary-fg);
-
 }
 
 @media screen and (min-width: 996px) {
