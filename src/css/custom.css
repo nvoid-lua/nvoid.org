@@ -20,6 +20,7 @@ html[data-theme="light"] {
   --normal-cyan: #9eb7d0;
   --normal-white: #c7ccd1;
   --bright-black: #adb3ba;
+  --normal-grey: #44484b;
   --Black: #161a1d;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
@@ -49,6 +50,7 @@ html[data-theme="dark"] {
   --normal-magenta: #ae95c7;
   --normal-cyan: #9eb7d0;
   --normal-white: #c7ccd1;
+  --normal-grey: #44484b;
   --bright-black: #3a3e41;
   --Black: #161a1d;
   --bright-red: var(--normal-red);
@@ -213,4 +215,46 @@ html[data-theme="dark"] .button:active {
 
 .tabs__item--active:hover {
   color: var(--primary-fg);
+}
+
+.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.table-of-contents {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-left: 0px;
+}
+
+.table-of-contents,
+.table-of-contents ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.table-of-contents__link--active {
+  background: var(--normal-grey);
+  border-bottom: 0px;
+  border-top-right-radius: var(--ifm-global-radius);
+  border-bottom-right-radius: var(--ifm-global-radius);
+  padding-left: 0.8rem;
+  color: var(--normal-blue);
+}
+
+.table-of-contents__link:hover {
+  background: var(--bright-blue);
+  border-bottom: 0px;
+  border-top-right-radius: var(--ifm-global-radius);
+  border-bottom-right-radius: var(--ifm-global-radius);
+  padding-left: 0.8rem;
+  color: var(--normal-black);
+}
+
+.table-of-contents__left-border {
+  border-left: 1px solid var(ifm-toc-border-color);
+  padding-left: 0rem;
 }
