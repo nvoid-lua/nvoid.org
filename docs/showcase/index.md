@@ -1,27 +1,9 @@
 ---
-sidebar_position: 1
+title: Showcase
+description: Showcasing some screenshots
 ---
 
-# UI
-
-## Statusline
-
-Nvoid comes with 3 statusline with the ability to create your own
-
-### Nvoid
-![Nvoid statusline](/img/statuslines/nvoid.png)
-
-### Minimal
-![Minimal statusline](/img/statuslines/minimal.png)
-
-### Evil
-![Evil statusline](/img/statuslines/evil.png)
-
-## Winbar
-![Winbar statusline](/img/winbar.png)
-
 ## Themes
-
 ### Dark
 #### aquarium
 ![aquarium](/img/themes/dark/aquarium.png)
@@ -67,3 +49,17 @@ Nvoid comes with 3 statusline with the ability to create your own
 ![gruvbox_light](/img/themes/light/gruvbox_light.png)
 #### one_light
 ![one_light](/img/themes/light/one_light.png)
+
+## Statuslines
+
+#### Nvoid
+![Nvoid statusline](/img/statuslines/nvoid.png)
+
+#### Minimal
+![Minimal statusline](/img/statuslines/minimal.png)
+
+#### Evil
+![Evil statusline](/img/statuslines/evil.png)
+
+## Screenshots
+## Rices

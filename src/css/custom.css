@@ -196,6 +196,30 @@ html[data-theme="dark"] {
   padding-left: 0rem;
 }
 
+.showcase-text {
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--normal-blue),
+    var(--normal-magenta),
+    var(--normal-blue)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  transition: background-position 0.5s;
+  text-decoration: none;
+}
+.social:hover {
+  text-decoration: none;
+}
+
+.social:hover .showcase-text {
+  text-decoration: none;
+  background-position: 100% 0;
+}
+
 @media screen and (max-width: 996px) {
   .tabs__item--active:hover {
     background: var(--normal-blue);

@@ -64,3 +64,16 @@ Range (min … max):    20.4 ms …  32.6 ms    93 runs
 ```
 These were ran buy `hyperfine`
 
+## UI
+
+Nvoid has all its UI plugins baked in, from the themes to the statusline and the bufferline
+
+
+### Themes
+you can find all the builtin themes at [The Showcase](/docs/showcase#themes)
+
+### Statusline
+
+Nvoid comes with 3 statusline styles (`nvoid`, `minimal`, `evil`) and the ability to create your own
+
+you can see these styles at [The Showcase](/docs/showcase#statuslines)
