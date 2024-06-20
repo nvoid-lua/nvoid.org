@@ -3,17 +3,14 @@
  * and scoped locally.
  */
 
-/* .buttons { */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: flex-start; */
-/*   flex-direction: column; */
-/*   gap: 1rem; */
-/* } */
-
-/* .button { */
-/*   margin: 0 0.5rem; */
-/* } */
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 .buttons {
   display: flex;
   align-items: center;
@@ -25,6 +22,129 @@
 .buttons > * {
   width: 100%;
 }
+
+.btn1 {
+  position: relative;
+  display: inline-block;
+  padding: calc(
+      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+    )
+    calc(
+      var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
+    );
+  text-align: center;
+  line-height: 1.5;
+  color: var(--normal-black);
+  font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
+  font-weight: var(--ifm-button-font-weight);
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    var(--normal-blue),
+    var(--normal-red),
+    var(--normal-yellow),
+    var(--normal-blue)
+  );
+  background-size: 400%;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.btn1:hover {
+  animation: animate 8s linear infinite;
+  color: var(--normal-black);
+  text-decoration: none;
+  font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
+  font-weight: var(--ifm-button-font-weight);
+}
+
+.btn1:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    var(--normal-blue),
+    var(--normal-magenta),
+    var(--normal-yellow),
+    var(--normal-blue)
+  );
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.btn1:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  color: var(--normal-black);
+  animation: animate 8s linear infinite;
+}
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: calc(
+      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+    )
+    calc(
+      var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
+    );
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, var(--normal-blue), var(--normal-red));
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn2:hover {
+  text-decoration: none;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 3px;
+  background-color: var(--primary-bg);
+  z-index: -1;
+  transition: 200ms;
+}
+
+.btn2::after {
+  content: "Config";
+  font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
+  font-weight: var(--ifm-button-font-weight);
+  background: linear-gradient(to left, var(--normal-blue), var(--normal-red));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+
+.btn2:hover::before {
+  color: var(--normal-black);
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.btn2:hover::after {
+  color: var(--normal-black);
+}
+
 .heroBanner {
   padding-block: 1rem;
   position: relative;
@@ -150,5 +270,37 @@
   }
   .buttons > * {
     width: auto;
+  }
+
+  .btn1 {
+    position: relative;
+    display: inline-block;
+    padding: calc(
+        var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+      )
+      calc(
+        var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
+      );
+    text-align: center;
+    line-height: 1.5;
+    color: var(--normal-black);
+    font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
+    font-weight: var(--ifm-button-font-weight);
+    box-sizing: border-box;
+    background: linear-gradient(
+      to right,
+      var(--normal-blue),
+      var(--normal-red),
+      var(--normal-yellow),
+      var(--normal-blue)
+    );
+    background-size: 400%;
+    border-radius: 6px;
+    z-index: 1;
+  }
+
+  .btn1:hover {
+    color: var(--normal-black);
+    text-decoration: none;
   }
 }

@@ -133,54 +133,6 @@ html[data-theme="dark"] {
   box-shadow: none !important;
 }
 
-.button {
-  border: none;
-  transition-duration: 0s;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
-  filter: brightness(100%);
-}
-
-.button:hover,
-.button:active {
-  filter: brightness(105%);
-}
-
-html[data-theme="dark"] .button:hover,
-html[data-theme="dark"] .button:active {
-  filter: brightness(105%);
-}
-
-.button--primary,
-.button--primary:hover {
-  background-image: linear-gradient(
-    to right,
-    var(--normal-cyan),
-    var(--normal-blue),
-    var(--normal-magenta)
-  );
-  color: var(--normal-black);
-}
-
-.button.button--secondary {
-  background: linear-gradient(
-    to right,
-    var(--normal-cyan),
-    var(--normal-blue),
-    var(--bright-magenta)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  border: 2px solid transparent;
-  border-image: linear-gradient(
-    to right,
-    var(--normal-magenta),
-    var(--normal-blue),
-    var(--bright-cyan)
-  );
-  border-image-slice: 1;
-}
-
 .tabs {
   color: var(--ifm-tabs-color);
   display: flex;
