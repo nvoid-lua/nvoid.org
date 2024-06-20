@@ -195,3 +195,12 @@ html[data-theme="dark"] {
   border-left: 0px solid var(--normal-grey);
   padding-left: 0rem;
 }
+
+@media screen and (max-width: 996px) {
+  .tabs__item--active:hover {
+    background: var(--normal-blue);
+    border-bottom: 0px;
+    border-radius: var(--ifm-global-radius);
+    color: var(--normal-black);
+  }
+}

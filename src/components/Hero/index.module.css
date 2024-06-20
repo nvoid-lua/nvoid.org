@@ -271,36 +271,4 @@
   .buttons > * {
     width: auto;
   }
-
-  .btn1 {
-    position: relative;
-    display: inline-block;
-    padding: calc(
-        var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
-      )
-      calc(
-        var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier)
-      );
-    text-align: center;
-    line-height: 1.5;
-    color: var(--normal-black);
-    font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
-    font-weight: var(--ifm-button-font-weight);
-    box-sizing: border-box;
-    background: linear-gradient(
-      to right,
-      var(--normal-blue),
-      var(--normal-red),
-      var(--normal-yellow),
-      var(--normal-blue)
-    );
-    background-size: 400%;
-    border-radius: 6px;
-    z-index: 1;
-  }
-
-  .btn1:hover {
-    color: var(--normal-black);
-    text-decoration: none;
-  }
 }
