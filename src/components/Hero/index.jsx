@@ -4,7 +4,6 @@ import Link from "@docusaurus/Link";
 import styles from "./index.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import classnames from "classnames";
-import PickVersion from "./pick";
 
 const Hero = () => {
   return (

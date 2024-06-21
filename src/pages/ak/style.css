@@ -1,0 +1,57 @@
+.ak-main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.ak-title {
+  font-weight: bold;
+  font-size: 6rem;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--normal-blue) 0%,
+    var(--normal-magenta) 20%,
+    var(--normal-blue) 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
+}
+
+.ak-list {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  color: var(--primary-fg);
+}
+
+.ak-link {
+  color: var(--normal-blue);
+  text-decoration: none;
+}
+
+.ak-link:hover {
+  text-decoration: underline;
+  color: var(--bright-cyan);
+}
+
+.ak-project-list {
+  font-size: 1.2em;
+  list-style-type: circle;
+  padding-left: 4rem;
+}
+
+.ak-project-item {
+  color: var(--primary-fg);
+  margin-bottom: 4px;
+}
+
+.ak-project-link {
+  color: var(--normal-blue);
+  text-decoration: none;
+}
+
+.ak-project-link:hover {
+  text-decoration: underline;
+  color: var(--bright-cyan);
+}
