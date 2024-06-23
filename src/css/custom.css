@@ -20,6 +20,7 @@ html[data-theme="light"] {
   --normal-cyan: #9eb7d0;
   --normal-white: #c7ccd1;
   --bright-black: #adb3ba;
+  --WHITE: var(--primary-fg);
   --normal-grey: #44484b;
   --Black: #161a1d;
   --bright-red: var(--normal-red);
@@ -52,6 +53,7 @@ html[data-theme="dark"] {
   --normal-white: #c7ccd1;
   --normal-grey: #44484b;
   --bright-black: #3a3e41;
+  --WHITE: #a9aeb3;
   --Black: #161a1d;
   --bright-red: var(--normal-red);
   --bright-green: var(--normal-green);
@@ -196,8 +198,36 @@ html[data-theme="dark"] {
   padding-left: 0rem;
 }
 
-.showcase-text {
+.navbar__title {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.docText {
+  font-weight: normal;
+  font-size: 20px;
+  color: var(--WHITE);
+  text-decoration: none;
+}
+.link:hover .docText {
+  text-decoration: none;
+  color: var(--normal-blue);
+}
+
+.akText {
+  font-weight: normal;
+  font-size: 20px;
+  color: var(--WHITE);
+  text-decoration: none;
+}
+.link:hover .akText {
+  text-decoration: none;
+  color: var(--normal-blue);
+}
+
+.scText {
   font-weight: bold;
+  font-size: 20px;
   color: transparent;
   background: linear-gradient(
     to right,
@@ -211,13 +241,14 @@ html[data-theme="dark"] {
   transition: background-position 0.5s;
   text-decoration: none;
 }
-.social:hover {
+
+.link:hover .scText {
+  background-position: 100% 0; /* Move the background position to the right */
   text-decoration: none;
 }
 
-.social:hover .showcase-text {
+.link:hover {
   text-decoration: none;
-  background-position: 100% 0;
 }
 
 @media screen and (max-width: 996px) {

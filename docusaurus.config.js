@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 const codeTheme = require("./src/theme/code-theme");
 const github = require("./github");
-const showcase = require("./showcase");
+const links = require("./links");
 
 const config = {
   title: "Nvoid",
@@ -62,18 +62,7 @@ const config = {
           type: "search",
           position: "right",
         },
-        {
-          label: "Docs",
-          type: "doc",
-          docId: "install/README",
-          position: "left",
-        },
-        {
-          label: "Acknowledgements",
-          to: "/ak",
-          position: "left",
-        },
-        ...showcase,
+        ...links,
         ...github,
       ],
     },
