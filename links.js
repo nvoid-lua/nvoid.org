@@ -6,7 +6,7 @@ const generateLink = (url, content, className) => {
 const links = [
   generateLink("/docs/install", "Docs", "docText"),
   generateLink("/ak", "Acknowledgements", "akText"),
-  generateLink("/docs/showcase", "Showcase", "scText"),
+  generateLink("/sc", "Showcase", "scText"),
 ];
 
 // Export the links array with added position and type properties

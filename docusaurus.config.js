@@ -66,39 +66,6 @@ const config = {
         ...github,
       ],
     },
-    footer: {
-      style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} nvoid-lua™,Built with Docusaurus.`,
-      links: [
-        {
-          items: [
-            {
-              label: "Install",
-              to: "docs/install",
-            },
-            {
-              label: "Configuration",
-              to: "docs/configuration",
-            },
-            {
-              label: "Acknowledgements",
-              to: "/ak",
-            },
-          ],
-        },
-        {
-          items: [
-            {
-              html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
-                </a>
-              `,
-            },
-          ],
-        },
-      ],
-    },
     prism: {
       theme: codeTheme,
       darkTheme: codeTheme,

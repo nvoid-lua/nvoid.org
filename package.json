@@ -23,6 +23,7 @@
     "clsx": "^2.1.1",
     "docusaurus": "^1.14.7",
     "docusaurus-plugin-image-zoom": "^2.0.0",
+    "medium-zoom": "^1.1.0",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.3.1",
     "react-contributors": "^1.1.2",
