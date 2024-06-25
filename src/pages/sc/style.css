@@ -1,11 +1,29 @@
 .h2Text {
   font-size: 3.2rem;
   font-weight: bolder;
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    var(--normal-magenta) 90%,
+    var(--normal-blue) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
 }
 
 .h3Text {
   font-size: 2rem;
   font-weight: bolder;
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    var(--normal-magenta) 95%,
+    var(--normal-blue) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
 }
 
 .showcase-container {
@@ -16,7 +34,7 @@
 .showcase-main {
   flex: 3;
   padding: 20px;
-  margin-right: 220px; /* Adjust this value based on the sidebar width + padding */
+  margin-right: auto;
 }
 
 .theme-section {
@@ -37,17 +55,27 @@
   gap: 20px;
 }
 .statusline-item {
-  flex: 1 1 calc(33.333% - 20px);
+  display: grid;
+  justify-items: center;
   text-align: center;
+}
+
+.statusline-title {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: var(--normal-blue);
+  color: var(--primary-bg);
+  border-radius: 20px;
 }
 
 .theme-title {
   display: inline-block;
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: var(--normal-blue); /* Background color */
+  background-color: var(--normal-blue);
   color: var(--primary-bg);
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
 }
 
 .theme-item img,
@@ -58,22 +86,6 @@
 
 .navbar-hidden {
   display: none;
-}
-
-.toc {
-  right: 0;
-  position: fixed;
-  top: 60px; /* Adjust based on your navbar height */
-  width: 200px;
-  height: calc(100% - 60px); /* Adjust based on your navbar height */
-  overflow-y: auto;
-  padding: 20px;
-  background-color: var(--primary-bg);
-}
-
-.active {
-  font-weight: bold;
-  color: var(--accent-color); /* Adjust to your design */
 }
 
 @media (max-width: 996px) {
@@ -99,10 +111,6 @@
 
   .showcase-main {
     padding: 0;
-    margin-right: 0; /* Adjust this value based on the sidebar width + padding */
-  }
-
-  .toc {
-    visibility: hidden;
+    margin-right: auto;
   }
 }
