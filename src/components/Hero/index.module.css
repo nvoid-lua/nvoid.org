@@ -1,8 +1,63 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* When its a bigger display*/
 
+/* Hero Content */
+.heroContent {
+  flex: 0.45;
+  width: 100%;
+  max-width: unset;
+}
+
+/* Hero Banner */
+.heroBanner {
+  padding: 4rem 0 calc(4rem + 100px);
+  background-color: var(--primary-bg);
+  color: var(--primary-fg);
+}
+.heroBanner > .container {
+  flex-direction: row;
+}
+
+.buttons,
+.heroBanner > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Title */
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 10px var(--primary-fg),
+      0 0 60px var(--primary-fg);
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 10px var(--primary-fg),
+      0 0 50px var(--primary-fg);
+  }
+}
+.heroTitle {
+  display: flex;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  padding: 0;
+  border: none;
+  animation: pulsate 1s ease-in-out infinite alternate;
+}
+
+.heroDescription {
+  text-align: left;
+}
+
+/* Buttons */
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -11,16 +66,17 @@
     background-position: 400%;
   }
 }
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
   gap: 1rem;
+  width: auto;
 }
 
 .buttons > * {
-  width: 100%;
+  width: auto;
 }
 
 .btn1 {
@@ -127,7 +183,7 @@
   content: "Config";
   font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
-  background: linear-gradient(to left, var(--normal-blue), var(--normal-red));
+  background: linear-gradient(to right, var(--normal-blue), var(--normal-red));
   -webkit-background-clip: text;
   color: transparent;
   transition: 200ms;
@@ -145,59 +201,7 @@
   color: var(--normal-black);
 }
 
-.heroBanner {
-  padding-block: 1rem;
-  position: relative;
-  background-color: var(--primary-bg);
-  color: var(--primary-fg);
-  min-height: 50vh;
-}
-
-@keyframes pulsate {
-  100% {
-    /* Larger blur radius */
-    text-shadow:
-      0 0 10px var(--primary-fg),
-      0 0 60px var(--primary-fg);
-  }
-  0% {
-    /* A slightly smaller blur radius */
-    text-shadow:
-      0 0 10px var(--primary-fg),
-      0 0 50px var(--primary-fg);
-  }
-}
-
-.heroTitle {
-  display: none;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-  font-size: 5rem;
-  padding: 0;
-  border: none;
-  animation: pulsate 1s ease-in-out infinite alternate;
-}
-
-.heroDescription {
-  text-align: left;
-}
-
-.heroBanner > .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column-reverse;
-  gap: 0rem;
-  position: relative;
-  z-index: 2;
-}
-
-.heroContent {
-  flex: 0.45;
-  width: 100%;
-  max-width: 28rem;
-}
-
+/* Hero Image */
 .heroImage {
   flex: 0.55;
 }
@@ -206,69 +210,40 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  max-width: 500px;
+  max-width: max-content;
 }
 
-@keyframes cursor-blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.toggleAnimations {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  z-index: 3;
-  cursor: pointer;
-  border: 0;
-  background-color: transparent;
-  --size: 3rem;
-  width: var(--size);
-  size: var(--size);
-  opacity: 0.45;
-  transition: opacity 300ms ease-in-out;
-}
-
-.toggleAnimations:active,
-.toggleAnimations:hover {
-  opacity: 1;
-}
-
-.toggleAnimations > svg {
-  width: 100%;
-  height: 100%;
-}
-
-.toggleAnimations > svg path {
-  fill: var(--primary-fg);
-}
-.toggleAnimations > svg circle {
-  stroke: var(--primary-fg);
-}
-
-@media screen and (min-width: 996px) {
-  .heroTitle {
-    display: flex;
-  }
-  .heroBanner {
-    padding: 4rem 0 calc(4rem + 100px);
-  }
-  .heroBanner > .container {
-    flex-direction: row;
-  }
-  .heroImage > img {
-    max-width: max-content;
-  }
+/* When its on a mobile phone */
+@media screen and (max-width: 996px) {
+  /* Hero Content */
   .heroContent {
-    max-width: unset;
+    max-width: 28rem;
+  }
+  /* Hero Banner */
+  .heroBanner {
+    padding-block: 1rem;
+    position: relative;
+    min-height: 50vh;
   }
 
-  .buttons,
   .heroBanner > .container {
-    flex-direction: row;
+    flex-direction: column-reverse;
+  }
+  /* Hero Title */
+  .heroTitle {
+    display: none;
+  }
+
+  /* buttons */
+  .buttons {
+    flex-direction: column;
   }
   .buttons > * {
-    width: auto;
+    width: 100%;
+  }
+
+  /* Hero Image */
+  .heroImage > img {
+    max-width: 500px;
   }
 }

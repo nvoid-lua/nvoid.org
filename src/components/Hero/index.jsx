@@ -36,14 +36,6 @@ const Hero = () => {
             src={require("@site/static/img/nvoid_logo.png").default}
             alt={"Nvoid logo"}
           />
-          {/* <h2 className="tw-inline-block tw-text-base lg:tw-text-lg tw-font-semibold tw-rounded-2xl tw-backdrop-blur-sm lg:tw-backdrop-blur"> */}
-          {/*   Install with one command */}
-          {/* </h2> */}
-          {/* <PickVersion className="!tw-mb-0"> */}
-          {/*   { */}
-          {/*     "bash <(curl -s https://raw.githubusercontent.com/nvoid-lua/nvoid/main/utils/installer/install.sh)" */}
-          {/*   } */}
-          {/* </PickVersion> */}
         </div>
       </div>
     </header>
