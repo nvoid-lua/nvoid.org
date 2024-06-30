@@ -225,15 +225,20 @@
     position: relative;
     min-height: 50vh;
   }
-
   .heroBanner > .container {
     flex-direction: column-reverse;
   }
   /* Hero Title */
   .heroTitle {
-    display: none;
+    justify-content: center;
+    font-size: 4rem;
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-all;
   }
-
+  .heroDescription {
+    text-align: center;
+  }
   /* buttons */
   .buttons {
     flex-direction: column;
@@ -241,7 +246,6 @@
   .buttons > * {
     width: 100%;
   }
-
   /* Hero Image */
   .heroImage > img {
     max-width: 500px;
