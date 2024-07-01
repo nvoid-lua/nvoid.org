@@ -17,8 +17,8 @@ export default function Home() {
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
       <main>
         <Hero />
-        <Features />
         <Preview />
+        <Features />
       </main>
     </Layout>
   );

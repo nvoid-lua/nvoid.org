@@ -1,7 +1,7 @@
 .featBanner {
   padding-block: 2rem;
   position: relative;
-  background-color: var(--primary-bg);
+  background-color: var(--normal-blue);
   color: var(--normal-black);
   min-height: 1vh;
 }
@@ -30,17 +30,17 @@
   height: var(--size);
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid var(--primary-fg);
+  border: 2px solid var(--normal-black);
   display: block;
   cursor: pointer;
 }
 
 .dot:hover {
-  outline: 2px solid var(--ifm-color-primary);
+  outline: 2px solid var(--normal-black);
 }
 
 .dot.active {
-  background-color: var(--primary-fg);
+  background-color: var(--normal-black);
   border: 2px solid transparent;
 }
 

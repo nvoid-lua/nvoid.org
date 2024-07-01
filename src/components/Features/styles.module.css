@@ -1,7 +1,7 @@
 .featBanner {
   padding: 1rem 0; /* Adjust padding */
-  background-color: var(--normal-blue);
-  color: var(--normal-black);
+  background-color: var(--primary-bg);
+  color: var(--primary-fg);
   position: relative;
 }
 

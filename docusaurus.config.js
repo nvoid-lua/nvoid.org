@@ -110,19 +110,11 @@ const config = {
     },
     previewImgs: [
       {
-        src: "/img/preview/alpha.png",
-        alt: "Nvoid Preview",
-      },
-      {
         src: "/img/preview/cool-splits.png",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/splits.png",
-        alt: "Nvoid Preview",
-      },
-      {
-        src: "/img/preview/cmp.png",
+        src: "/img/preview/alpha.png",
         alt: "Nvoid Preview",
       },
       {
@@ -130,11 +122,19 @@ const config = {
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/telescope.png",
+        src: "/img/preview/cmp.png",
         alt: "Nvoid Preview",
       },
       {
         src: "/img/preview/term-nvimtree.png",
+        alt: "Nvoid Preview",
+      },
+      {
+        src: "/img/preview/splits.png",
+        alt: "Nvoid Preview",
+      },
+      {
+        src: "/img/preview/telescope.png",
         alt: "Nvoid Preview",
       },
     ],
