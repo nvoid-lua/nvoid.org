@@ -11,23 +11,15 @@ const Preview = () => {
     },
   } = useDocusaurusContext();
 
-  const [previewIdx, setPreviewIdx] = useState(1);
+  const [previewIdx, setPreviewIdx] = useState(0);
   const imgsCount = previewImgs.length;
 
   const nextImg = () => {
-    if (previewIdx === imgsCount - 1) {
-      setPreviewIdx(0);
-    } else {
-      setPreviewIdx((current) => current + 1);
-    }
+    setPreviewIdx((prevIdx) => (prevIdx + 1) % imgsCount);
   };
 
   const prevImg = () => {
-    if (previewIdx === 0) {
-      setPreviewIdx(imgsCount - 1);
-    } else {
-      setPreviewIdx((current) => current - 1);
-    }
+    setPreviewIdx((prevIdx) => (prevIdx - 1 + imgsCount) % imgsCount);
   };
 
   return (
@@ -45,30 +37,37 @@ const Preview = () => {
             <button
               key={idx}
               onClick={() => setPreviewIdx(idx)}
-              className={`${styles.dot} ${
-                idx === previewIdx ? styles.active : null
-              }`}
+              className={clsx(styles.dot, {
+                [styles.active]: idx === previewIdx,
+              })}
+              aria-label={`Preview Image ${idx + 1}`}
             />
           ))}
         </div>
-        <button className={`${styles.btn} ${styles.prev}`} onClick={prevImg}>
-          {" "}
-          <Arrow />{" "}
+        <button
+          className={clsx(styles.btn, styles.prev)}
+          onClick={prevImg}
+          aria-label="Previous Image"
+        >
+          <Arrow />
         </button>
-        <button className={`${styles.btn} ${styles.next}`} onClick={nextImg}>
-          {" "}
-          <Arrow />{" "}
+        <button
+          className={clsx(styles.btn, styles.next)}
+          onClick={nextImg}
+          aria-label="Next Image"
+        >
+          <Arrow />
         </button>
       </div>
     </header>
   );
 };
 
-const Arrow = (props) => (
-  <svg width="29" height="30" viewBox="0 0 18 19" fill="none" {...props}>
+const Arrow = () => (
+  <svg width="29" height="30" viewBox="0 0 18 19" fill="none">
     <path
       d="M4.5 7.05497L9 11.7325L13.5 7.05497"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
