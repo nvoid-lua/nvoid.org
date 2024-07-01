@@ -4,6 +4,7 @@ import Link from "@docusaurus/Link";
 import styles from "./index.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import classnames from "classnames";
+import Description from "./Description";
 
 const Hero = () => {
   return (
@@ -11,13 +12,7 @@ const Hero = () => {
       <div className={`container ${styles.container}`}>
         <div className={styles.heroContent}>
           <h1 className={`hero__title ${styles.heroTitle}`}>Nvoid</h1>
-          <p className={`hero__description ${styles.heroDescription} `}>
-            An enhanced version of the{" "}
-            <a href="https://neovim.io" target={"_blank"}>
-              Neovim
-            </a>{" "}
-            text editor
-          </p>
+          <Description />
           <div className={styles.buttons}>
             <Link
               className={classnames("btn1 button--lg", styles.btn1)}

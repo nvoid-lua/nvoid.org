@@ -2,6 +2,8 @@
 
 /* Hero Content */
 .heroContent {
+  display: flex;
+  flex-direction: column;
   flex: 0.45;
   width: 100%;
   max-width: unset;
@@ -13,17 +15,14 @@
   background-color: var(--primary-bg);
   color: var(--primary-fg);
 }
-.heroBanner > .container {
-  flex-direction: row;
-}
 
 .buttons,
 .heroBanner > .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: row;
-  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
   position: relative;
   z-index: 2;
 }
@@ -53,8 +52,18 @@
   animation: pulsate 1s ease-in-out infinite alternate;
 }
 
-.heroDescription {
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+.slogan {
+  font-size: 1.2rem;
   text-align: left;
+}
+.slogan::after {
+  content: " ▋";
+  animation: cursor-blink 2s linear infinite;
 }
 
 /* Buttons */
@@ -227,6 +236,7 @@
   }
   .heroBanner > .container {
     flex-direction: column-reverse;
+    gap: 0rem;
   }
   /* Hero Title */
   .heroTitle {
@@ -236,7 +246,7 @@
     white-space: normal;
     word-break: break-all;
   }
-  .heroDescription {
+  .slogan {
     text-align: center;
   }
   /* buttons */
