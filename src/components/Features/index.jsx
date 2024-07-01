@@ -1,36 +1,69 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Opinionated',
+    title: "Fast",
     description: (
       <>
-        Nvoid ships with features that comes with modern IDEs like autocompletion, file explorer, fuzzy finder, LSP.
+        Nvoid lazyloads most of the plugins to maximize speed and disabled
+        plugins won't slow things down which allows Nvoid to have bothe speed
+        and Advanced Features
       </>
     ),
   },
   {
-    title: 'Extensible',
+    title: "Extensible",
     description: (
       <>
-        through the `config.lua` you can customize nearly everything that comes with Nvoid.
+        Tailor your IDE to fit your workflow with extensive customization
+        options available through Lua scripts and config.lua.
       </>
     ),
   },
   {
-    title: 'Made with Lua',
+    title: "Made with Lua",
     description: (
       <>
-        By integrating Nvoid into Lua scripts, users can further enhance their Neovim experience. The code snippet provided in the selection demonstrates how to declare and use a local variable `nvoid` in a Lua script with Nvoid.
+        The integration of Nvoid into Lua scripts enhances the Neovim
+        experience. Users can declare and utilize a local variable nvoid in Lua
+        scripts to leverage Nvoid functionalities within Neovim.
+      </>
+    ),
+  },
+  {
+    title: "Seamless Integration",
+    description: (
+      <>
+        By having all of its UI components built in, from the colorschemes and
+        statusline to the bufferline, Nvoid ensures a cohesive and seamless user
+        experience.
+      </>
+    ),
+  },
+  {
+    title: "Advanced LSP Support",
+    description: (
+      <>
+        Benefit from robust Language Server Protocol (LSP) integration for
+        better code completion, diagnostics, and navigation.
+      </>
+    ),
+  },
+  {
+    title: "Powerful Terminal Integration",
+    description: (
+      <>
+        Run terminal commands directly within Nvoid, ensuring a smooth workflow
+        without leaving your editor.
       </>
     ),
   },
 ];
 
 const Feature = ({ title, description }) => (
-  <div className={clsx('col col--4')}>
+  <div className={clsx("col col--4", styles.feature)}>
     <div className="text--center padding-horiz--md">
       <h3>{title}</h3>
       <p>{description}</p>
@@ -38,18 +71,16 @@ const Feature = ({ title, description }) => (
   </div>
 );
 
-const Features = () => {
-  return (
-    <header className={clsx('feat feat--primary', styles.featBanner)}>
-      <div className={`container ${styles.container}`}>
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+const Features = () => (
+  <header className={clsx("feat feat--primary", styles.featBanner)}>
+    <div className={`container ${styles.container}`}>
+      <div className="row">
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
-    </header>
-  );
-};
+    </div>
+  </header>
+);
 
 export default Features;

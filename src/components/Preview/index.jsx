@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React, { useState } from "react";
+import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
 
 const Preview = () => {
   const {
@@ -31,7 +31,7 @@ const Preview = () => {
   };
 
   return (
-    <header className={clsx('feat feat--primary', styles.featBanner)}>
+    <header className={clsx("feat feat--primary", styles.featBanner)}>
       <div className={`container ${styles.container}`}>
         <div className={styles.slider}>
           <img
@@ -45,18 +45,19 @@ const Preview = () => {
             <button
               key={idx}
               onClick={() => setPreviewIdx(idx)}
-              className={`${styles.dot} ${idx === previewIdx ? styles.active : null
-                }`}
+              className={`${styles.dot} ${
+                idx === previewIdx ? styles.active : null
+              }`}
             />
           ))}
         </div>
         <button className={`${styles.btn} ${styles.prev}`} onClick={prevImg}>
-          {' '}
-          <Arrow />{' '}
+          {" "}
+          <Arrow />{" "}
         </button>
         <button className={`${styles.btn} ${styles.next}`} onClick={nextImg}>
-          {' '}
-          <Arrow />{' '}
+          {" "}
+          <Arrow />{" "}
         </button>
       </div>
     </header>

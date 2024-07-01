@@ -1,25 +1,26 @@
 .featBanner {
-  padding-block: 1rem;
-  padding-bottom: 0rem;
-  position: relative;
+  padding: 1rem 0; /* Adjust padding */
   background-color: var(--normal-blue);
   color: var(--normal-black);
-  min-height: 0vh;
+  position: relative;
 }
+
 .features {
   display: flex;
   align-items: center;
-  padding: 5rem 0;
+  justify-content: center; /* Center content horizontally */
+  padding: 5rem 0; /* Adjust padding */
   width: 100%;
-}
-
-.featureSvg {
-  height: 185px;
-  width: 185px;
-  margin-bottom: 1rem;
 }
 
 .container {
   position: relative;
   z-index: 2;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  margin-bottom: 2rem; /* Adjust spacing between features */
 }
