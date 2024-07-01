@@ -8,8 +8,8 @@ const FeatureList = [
     description: (
       <>
         Nvoid lazyloads most of the plugins to maximize speed and disabled
-        plugins won't slow things down which allows Nvoid to have bothe speed
-        and Advanced Features
+        plugins won't slow things down which allows Nvoid to have both speed and
+        Advanced Features
       </>
     ),
   },
@@ -72,7 +72,7 @@ const Feature = ({ title, description }) => (
 );
 
 const Features = () => (
-  <header className={clsx("feat feat--primary", styles.featBanner)}>
+  <header className={clsx("featBanner", styles.featBanner)}>
     <div className={`container ${styles.container}`}>
       <div className="row">
         {FeatureList.map((props, idx) => (

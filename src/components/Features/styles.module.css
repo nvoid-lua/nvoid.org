@@ -5,14 +5,6 @@
   position: relative;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center content horizontally */
-  padding: 5rem 0; /* Adjust padding */
-  width: 100%;
-}
-
 .container {
   position: relative;
   z-index: 2;

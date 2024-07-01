@@ -1,3 +1,16 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 .featBanner {
   padding-block: 2rem;
   position: relative;
@@ -5,22 +18,52 @@
   color: var(--normal-black);
   min-height: 1vh;
 }
+
+.container {
+  position: relative;
+  overflow: hidden; /* Ensure the slider and buttons do not overflow */
+}
+
 .container img {
-  margin-block: 1rem;
   width: 100%;
-  max-width: var(--ifm-container-width-xl);
+  display: block;
   border-radius: 1rem;
 }
 
-.container {
-  padding-block: 1rem 1.5rem;
+.slider {
   position: relative;
+  width: 100%;
+  margin-bottom: 1rem; /* Space between image and navigation */
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem; /* Space between image and navigation */
+}
+
+.navButton {
+  background-color: var(--normal-black);
+  color: var(--normal-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem; /* Adjust width as needed */
+  height: 2.5rem; /* Adjust height as needed */
+}
+
+.navButton:hover {
+  background-color: var(--normal-grey);
 }
 
 .dots {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -31,7 +74,6 @@
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid var(--normal-black);
-  display: block;
   cursor: pointer;
 }
 
@@ -44,48 +86,13 @@
   border: 2px solid transparent;
 }
 
-.btn {
-  --size: 3rem;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  background-color: var(--primary-bg);
-  border: 3px solid var(--primary-fg);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-}
-
-.btn > svg path {
-  stroke: var(--primary-fg);
-}
-
-.btn:hover {
-  border: 3px solid var(--ifm-color-primary);
-}
-
-.btn:hover > svg path {
-  stroke: var(--ifm-color-primary);
-}
-
-.btn.prev {
-  transform: translate(-50%, calc(-50% - 1rem)) rotate(90deg);
-  left: 2rem;
-}
-
-.btn.next {
-  transform: translate(50%, calc(-50% - 1rem)) rotate(-90deg);
-  right: 2rem;
-}
-
-@media screen and (min-width: 996px) {
-  .btn.prev {
-    left: 1rem;
+@media (max-width: 996px) {
+  .navButton {
+    width: 2rem; /* Adjusted smaller width */
+    height: 2rem; /* Adjusted smaller height */
   }
-  .btn.next {
-    right: 1rem;
+
+  .navButton:hover {
+    background-color: var(--normal-black);
   }
 }

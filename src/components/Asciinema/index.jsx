@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import Translate from '@docusaurus/Translate';
+import React, { useEffect, useRef } from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import Translate from "@docusaurus/Translate";
 
 const AsciinemaPlayer = ({ src, ...asciinemaOptions }) => {
   // ignore if run on node
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     return null;
   }
 
@@ -15,7 +15,7 @@ const AsciinemaPlayer = ({ src, ...asciinemaOptions }) => {
   // top-level import will cause error when building
   useEffect(async () => {
     const loadLib = async () => {
-      return await import('asciinema-player');
+      return await import("asciinema-player");
     };
 
     setLib(await loadLib());
