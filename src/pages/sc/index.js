@@ -1,15 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
-import TOC from "@theme/TOC"; // Import TOC component
 import mediumZoom from "medium-zoom";
 import "./style.css"; // Assuming you have a styles.css file for your CSS
-
-const toc = [
-  { value: "Themes", id: "themes", level: 2 },
-  { value: "Dark", id: "dark", level: 3 },
-  { value: "Light", id: "light", level: 3 },
-  { value: "Statuslines", id: "statuslines", level: 2 },
-];
 
 const Showcase = () => {
   useEffect(() => {
@@ -41,9 +33,6 @@ const Showcase = () => {
   return (
     <Layout title="Showcase" description="Showcasing some screenshots">
       <div className="showcase-container">
-        <aside className="showcase-toc">
-          <TOC toc={toc} /> {/* Pass the TOC data here */}
-        </aside>
         <main className="showcase-main">
           <h2 id="themes" className="content-section h2Text">
             Themes
