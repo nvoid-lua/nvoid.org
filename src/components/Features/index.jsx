@@ -1,10 +1,18 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Icon1 from "../../../static/img/feat/mdi--rocket-launch.svg";
+import Icon2 from "../../../static/img/feat/mdi--gear.svg";
+import Icon3 from "../../../static/img/feat/mdi--language-lua.svg";
+import Icon4 from "../../../static/img/feat/mdi--puzzle-check.svg";
+import Icon5 from "../../../static/img/feat/mdi--server.svg";
+import Icon6 from "../../../static/img/feat/mdi--terminal.svg";
 
 const FeatureList = [
   {
     title: "Fast",
+    icon: <Icon1 />,
+    color: "var(--color-fast)",
     description: (
       <>
         Nvoid lazyloads most of the plugins to maximize speed and disabled
@@ -15,6 +23,8 @@ const FeatureList = [
   },
   {
     title: "Extensible",
+    icon: <Icon2 />,
+    color: "var(--color-extensible)",
     description: (
       <>
         Tailor your IDE to fit your workflow with extensive customization
@@ -24,6 +34,8 @@ const FeatureList = [
   },
   {
     title: "Made with Lua",
+    icon: <Icon3 />,
+    color: "var(--color-lua)",
     description: (
       <>
         The integration of Nvoid into Lua scripts enhances the Neovim
@@ -34,6 +46,8 @@ const FeatureList = [
   },
   {
     title: "Seamless Integration",
+    icon: <Icon4 />,
+    color: "var(--color-integration)",
     description: (
       <>
         By having all of its UI components built in, from the colorschemes and
@@ -44,6 +58,8 @@ const FeatureList = [
   },
   {
     title: "Advanced LSP Support",
+    icon: <Icon5 />,
+    color: "var(--color-lsp)",
     description: (
       <>
         Benefit from robust Language Server Protocol (LSP) integration for
@@ -53,6 +69,8 @@ const FeatureList = [
   },
   {
     title: "Powerful Terminal Integration",
+    icon: <Icon6 />,
+    color: "var(--color-terminal)",
     description: (
       <>
         Run terminal commands directly within Nvoid, ensuring a smooth workflow
@@ -62,9 +80,17 @@ const FeatureList = [
   },
 ];
 
-const Feature = ({ title, description }) => (
+const Feature = ({ icon, title, description, color }) => (
   <div className={clsx("col col--4", styles.feature)}>
     <div className="text--center padding-horiz--md">
+      <div
+        className={styles.icon}
+        style={{ color }}
+        aria-label={title}
+        role="img"
+      >
+        {icon}
+      </div>
       <h3>{title}</h3>
       <p>{description}</p>
     </div>

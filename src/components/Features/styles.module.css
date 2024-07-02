@@ -1,5 +1,14 @@
+:root {
+  --color-fast: var(--normal-red);
+  --color-extensible: var(--normal-magenta); /* SteelBlue */
+  --color-lua: var(--normal-blue); /* MediumPurple */
+  --color-integration: var(--normal-green); /* MediumSeaGreen */
+  --color-lsp: var(--normal-grey); /* DarkOrange */
+  --color-terminal: var(--normal-yellow); /* Orchid */
+}
+
 .featBanner {
-  padding: 1rem 0; /* Adjust padding */
+  padding: 1rem 0;
   background-color: var(--primary-bg);
   color: var(--primary-fg);
   position: relative;
@@ -12,7 +21,27 @@
 
 .feature {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
-  margin-bottom: 2rem; /* Adjust spacing between features */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feature .icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 996px) {
+  .feature {
+    text-align: center;
+  }
 }

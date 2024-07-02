@@ -36,19 +36,11 @@ const config = {
     ],
   ],
   themeConfig: {
-    zoom: {
-      selector: ".markdown :not(em) > img",
-      background: {
-        light: "rgb(255, 255, 255)",
-        dark: "rgb(50, 50, 50)",
-      },
-      config: {},
-    },
     colorMode: {
       defaultMode: "dark",
     },
     announcementBar: {
-      content: `⭐️ If you like Nvoid, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvoid-lua/nvoid">GitHub</a>⭐️`,
+      content: ` ⭐️If you like Nvoid, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvoid-lua/nvoid">GitHub</a> ⭐️`,
     },
     // image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -81,7 +73,6 @@ const config = {
     },
   },
   plugins: [
-    "docusaurus-plugin-image-zoom",
     [
       "./plugins/asciinema",
       {
@@ -123,10 +114,6 @@ const config = {
       },
       {
         src: "/img/preview/cmp.png",
-        alt: "Nvoid Preview",
-      },
-      {
-        src: "/img/preview/term-nvimtree.png",
         alt: "Nvoid Preview",
       },
       {
