@@ -1,10 +1,10 @@
 :root {
   --color-fast: var(--normal-red);
-  --color-extensible: var(--normal-magenta); /* SteelBlue */
-  --color-lua: var(--normal-blue); /* MediumPurple */
-  --color-integration: var(--normal-green); /* MediumSeaGreen */
-  --color-lsp: var(--normal-grey); /* DarkOrange */
-  --color-terminal: var(--normal-yellow); /* Orchid */
+  --color-extensible: var(--normal-magenta);
+  --color-lua: var(--normal-blue);
+  --color-integration: var(--normal-green);
+  --color-lsp: var(--normal-grey);
+  --color-terminal: var(--normal-yellow);
 }
 
 .featBanner {
@@ -36,8 +36,8 @@
 }
 
 .feature .icon svg {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media (max-width: 996px) {
