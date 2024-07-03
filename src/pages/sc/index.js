@@ -1,35 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "@theme/Layout";
-import mediumZoom from "medium-zoom";
 import "./style.css"; // Assuming you have a styles.css file for your CSS
 
 const Showcase = () => {
-  useEffect(() => {
-    const zoom = mediumZoom(".showcase-image");
-
-    const handleShow = () => {
-      const navbar = document.querySelector(".navbar");
-      if (navbar) {
-        navbar.classList.add("navbar-hidden");
-      }
-    };
-
-    const handleHide = () => {
-      const navbar = document.querySelector(".navbar");
-      if (navbar) {
-        navbar.classList.remove("navbar-hidden");
-      }
-    };
-
-    zoom.on("open", handleShow);
-    zoom.on("close", handleHide);
-
-    return () => {
-      zoom.off("open", handleShow);
-      zoom.off("close", handleHide);
-    };
-  }, []);
-
   return (
     <Layout title="Showcase" description="Showcasing some screenshots">
       <div className="showcase-container">

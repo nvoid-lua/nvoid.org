@@ -70,10 +70,10 @@ Nvoid has all its UI plugins baked in, from the themes to the statusline and the
 
 
 ### Themes
-you can find all the builtin themes at [The Showcase](/docs/showcase#themes)
+you can find all the builtin themes at [The Showcase](/sc#themes)
 
 ### Statusline
 
 Nvoid comes with 3 statusline styles (`nvoid`, `minimal`, `evil`) and the ability to create your own
 
-you can see these styles at [The Showcase](/docs/showcase#statuslines)
+you can see these styles at [The Showcase](/sc#statusline)
