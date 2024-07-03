@@ -83,15 +83,16 @@ const FeatureList = [
 const Feature = ({ icon, title, description, color }) => (
   <div className={clsx("col col--4", styles.feature)}>
     <div className="text--center padding-horiz--md">
-      <div
-        className={styles.icon}
-        style={{ color }}
-        aria-label={title}
-        role="img"
-      >
-        {icon}
-      </div>
-      <h3>{title}</h3>
+      <h3>
+        <div
+          className={styles.icon}
+          style={{ color }}
+          aria-label={title}
+          role="img"
+        >
+          {icon} {title}
+        </div>
+      </h3>
       <p>{description}</p>
     </div>
   </div>
