@@ -38,7 +38,7 @@ const Showcase = () => {
               <div key={theme} className="theme-item">
                 <h4 className="theme-title">{theme}</h4>
                 <img
-                  src={`/img/themes/dark/${theme}.png`}
+                  src={`/img/themes/dark/${theme}.webp`}
                   alt={theme}
                   className="showcase-image"
                 />
@@ -54,7 +54,7 @@ const Showcase = () => {
               <div key={theme} className="theme-item">
                 <h4 className="theme-title">{theme}</h4>
                 <img
-                  src={`/img/themes/light/${theme}.png`}
+                  src={`/img/themes/light/${theme}.webp`}
                   alt={theme}
                   className="showcase-image"
                 />
@@ -70,7 +70,7 @@ const Showcase = () => {
               <div key={statusline} className="statusline-item">
                 <h4 className="statusline-title">{statusline}</h4>
                 <img
-                  src={`/img/statuslines/${statusline.toLowerCase()}.png`}
+                  src={`/img/statuslines/${statusline.toLowerCase()}.webp`}
                   alt={statusline}
                   className="showcase-image"
                 />

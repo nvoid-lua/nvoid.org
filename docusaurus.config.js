@@ -97,27 +97,27 @@ const config = {
   customFields: {
     previewImgs: [
       {
-        src: "/img/preview/cool-splits.png",
+        src: "/img/preview/cool-splits.webp",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/alpha.png",
+        src: "/img/preview/alpha.webp",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/nvimtree.png",
+        src: "/img/preview/nvimtree.webp",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/cmp.png",
+        src: "/img/preview/cmp.webp",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/splits.png",
+        src: "/img/preview/splits.webp",
         alt: "Nvoid Preview",
       },
       {
-        src: "/img/preview/telescope.png",
+        src: "/img/preview/telescope.webp",
         alt: "Nvoid Preview",
       },
     ],

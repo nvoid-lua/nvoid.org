@@ -13,12 +13,12 @@ Nvoid take's advantage of [`language server protocol`](https://microsoft.github.
 ## [`cmp`](https://github.com/hrsh7th/nvim-cmp)
 
 A completion engine plugin for neovim written in Lua. Completion sources are installed from external repositories and "sourced".
-![CMP](/img/preview/cmp.png)
+![CMP](/img/preview/cmp.webp)
 
 ## [`Telescope`](https://github.com/nvim-telescope/telescope.nvim)
 
 A fuzzy finder written in lua
-![CMP](/img/preview/telescope.png)
+![CMP](/img/preview/telescope.webp)
 
 `leader` `f` `f`
 
