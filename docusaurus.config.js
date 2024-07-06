@@ -7,7 +7,7 @@ const links = require("./links");
 const config = {
   title: "Nvoid",
   tagline: "Enhanced version of the Vim text editor in lua",
-  favicon: "img/nvoid_logo.png",
+  favicon: "img/nvoid_logo.svg",
   url: "https://nvoid.org",
   baseUrl: "/",
   onBrokenLinks: "warn",
@@ -47,7 +47,7 @@ const config = {
       title: "Nvoid",
       logo: {
         alt: "Nvoid Logo",
-        src: "img/nvoid_logo.png",
+        src: "img/nvoid_logo.svg",
       },
       items: [
         {
@@ -95,10 +95,6 @@ const config = {
   ],
 
   customFields: {
-    heroImage: {
-      src: "/img/nvoid_logo.png",
-      alt: "Nvoid Logo",
-    },
     previewImgs: [
       {
         src: "/img/preview/cool-splits.png",

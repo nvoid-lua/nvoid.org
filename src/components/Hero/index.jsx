@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import NvoidLogo from "../../../static/img/icons/nvoid.svg";
 import styles from "./index.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import classnames from "classnames";
@@ -26,12 +27,7 @@ const Hero = () => {
             ></Link>
           </div>
         </div>
-        <div className={styles.heroImage}>
-          <img
-            src={require("@site/static/img/nvoid_logo.png").default}
-            alt={"Nvoid logo"}
-          />
-        </div>
+        <NvoidLogo className={styles.Nvoidsvg} />
       </div>
     </header>
   );
