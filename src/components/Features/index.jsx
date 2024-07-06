@@ -1,12 +1,12 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
-import Icon1 from "../../../static/img/feat/mdi--rocket-launch.svg";
-import Icon2 from "../../../static/img/feat/mdi--gear.svg";
-import Icon3 from "../../../static/img/feat/mdi--language-lua.svg";
-import Icon4 from "../../../static/img/feat/mdi--puzzle-check.svg";
-import Icon5 from "../../../static/img/feat/mdi--server.svg";
-import Icon6 from "../../../static/img/feat/mdi--terminal.svg";
+import Icon1 from "../../../static/img/icons/rocket.svg";
+import Icon2 from "../../../static/img/icons/gear.svg";
+import Icon3 from "../../../static/img/icons/lua.svg";
+import Icon4 from "../../../static/img/icons/puzzle.svg";
+import Icon5 from "../../../static/img/icons/server.svg";
+import Icon6 from "../../../static/img/icons/terminal.svg";
 
 const FeatureList = [
   {
