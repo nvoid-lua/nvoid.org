@@ -4,7 +4,7 @@
 
 ## [`Lazy.nvim`](https://github.com/folke/lazy.nvim)
 
-![lazy nvim](/img/lazy.png)
+![lazy nvim](/img/lazy.webp)
 
 ## [`LSP`](https://github.com/neovim/nvim-lspconfig)
 
@@ -27,7 +27,7 @@ A fuzzy finder written in lua
 A file explorer tree for neovim written in lua
 <h3 align="left">
 
-![Nvim tree](/img/nvim-tree.png)
+![Nvim tree](/img/nvim-tree.webp)
 
 </h3>
 
@@ -36,7 +36,7 @@ A file explorer tree for neovim written in lua
 ## [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
 
 Syntax highlighting engine
-![Treesitter](/img/treesitter.png)
+![Treesitter](/img/treesitter.webp)
 left `on` right `off`
 
 
