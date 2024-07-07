@@ -251,6 +251,10 @@ html[data-theme="dark"] {
   text-decoration: none;
 }
 
+.navbar {
+  transition: display 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 996px) {
   .tabs__item--active:hover {
     background: var(--normal-blue);
