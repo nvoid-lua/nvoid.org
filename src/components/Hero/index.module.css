@@ -212,9 +212,6 @@
 
 /* Hero Image */
 .Nvoidsvg {
-  flex: 0.55;
-  object-fit: contain;
-  max-width: max-content;
   fill: var(--normal-blue);
   width: 35rem;
   height: 35rem;
