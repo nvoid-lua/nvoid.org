@@ -3,6 +3,8 @@ import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import Dot from "../../../static/img/icons/circle.svg";
+import DotA from "../../../static/img/icons/circleA.svg";
 
 const ArrowLeftIcon = () => (
   <svg
@@ -110,7 +112,13 @@ const Preview = () => {
                 })}
                 aria-label={`Preview Image ${idx + 1}`}
                 role="button"
-              />
+              >
+                {idx === previewIdx ? (
+                  <DotA className={styles.cir} />
+                ) : (
+                  <Dot className={styles.cir} />
+                )}
+              </button>
             ))}
           </div>
           <button

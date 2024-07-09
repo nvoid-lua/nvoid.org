@@ -105,24 +105,28 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  background: transparent;
+  border: transparent;
 }
 
 .dot {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100%;
-  background-color: transparent;
-  border: 2px solid var(--normal-black);
-  cursor: pointer;
+  display: flex;
+  align-content: center;
+  background: transparent;
+  border: transparent;
 }
 
-.dot:hover {
-  outline: 2px solid var(--normal-black);
+.cir {
+  color: var(--normal-black);
+  width: 20px;
+  height: 20px;
 }
 
-.dot.active {
-  background-color: var(--normal-black);
-  border: 2px solid transparent;
+.cir:hover {
+  background: transparent;
+  border: 10px solid var(--normal-grey);
+  border-radius: 100px;
+  color: var(--normal-grey);
 }
 
 @media (max-width: 996px) {
@@ -133,5 +137,21 @@
 
   .navButton:hover {
     background-color: var(--normal-black);
+  }
+
+  .dots {
+    gap: 0.1rem;
+  }
+
+  .cir {
+    color: var(--normal-black);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .cir:hover {
+    color: var(--normal-black);
+    width: 1rem;
+    height: 1rem;
   }
 }
