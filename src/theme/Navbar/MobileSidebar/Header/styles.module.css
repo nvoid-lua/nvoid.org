@@ -1,0 +1,35 @@
+.navbarlogo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.navbarsvg {
+  color: var(--normal-blue);
+  width: 32px;
+  height: 32px;
+}
+
+.navbartext {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--primary-fg);
+  text-decoration: none;
+  padding: var(--ifm-navbar-item-padding-vertical)
+    var(--ifm-navbar-item-padding-horizontal);
+}
+
+.navbartext:hover {
+  color: var(--normal-blue);
+}
+
+a.navbarlogo:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 996px) {
+  .navbartext:hover {
+    color: var(--primary-fg);
+  }
+}
