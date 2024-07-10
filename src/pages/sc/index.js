@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
+import mediumZoom from "medium-zoom";
 import "./style.css"; // Assuming you have a styles.css file for your CSS
 
 const Showcase = () => {
+  useEffect(() => {
+    const zoom = mediumZoom(".showcase-image");
+
+    zoom.on("open", () => {
+      document.querySelector(".navbar").style.display = "none";
+    });
+
+    zoom.on("close", () => {
+      document.querySelector(".navbar").style.display = "flex"; // or the original display style of your navbar
+    });
+
+    return () => {
+      zoom.detach(); // Clean up the zoom instance on unmount
+    };
+  }, []);
   return (
     <Layout title="Showcase" description="Showcasing some screenshots">
       <div className="showcase-container">
