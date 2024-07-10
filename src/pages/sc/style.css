@@ -85,10 +85,6 @@
   height: auto;
 }
 
-.navbar-hidden {
-  display: none;
-}
-
 @media (max-width: 996px) {
   .theme-item,
   .statusline-item {
