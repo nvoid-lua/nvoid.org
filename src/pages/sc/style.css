@@ -79,7 +79,7 @@
 }
 
 /* Responsive styles */
-@media screen and (max-width: 996px) {
+@media (max-width: 996px) {
   .showcase-container {
     flex-direction: column;
     padding: 10px;
