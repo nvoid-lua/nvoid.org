@@ -32,25 +32,20 @@ const Showcase = () => (
   <Layout title="Showcase" description="Showcasing some screenshots">
     <div className="showcase-container">
       <main className="showcase-main">
-        <Section title="Themes">
+        <Section title="Themes" className="themes-section">
           <Subsection title="Dark" items={themes.dark} path="themes/dark" />
           <Subsection title="Light" items={themes.light} path="themes/light" />
         </Section>
-        <Section title="Statuslines">
-          <Subsection
-            title="Statuslines"
-            items={statuslines}
-            path="statuslines"
-            lowercase
-          />
+        <Section title="Statuslines" className="statuslines-section">
+          <Subsection items={statuslines} path="statuslines" lowercase />
         </Section>
       </main>
     </div>
   </Layout>
 );
 
-const Section = ({ title, children }) => (
-  <section className="content-section">
+const Section = ({ title, children, className }) => (
+  <section className={`content-section ${className}`}>
     <h2 className="section-title">{title}</h2>
     {children}
   </section>

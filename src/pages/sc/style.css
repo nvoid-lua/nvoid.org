@@ -36,14 +36,31 @@
   margin-right: auto;
 }
 
-.item-grid {
+.content-section {
+  padding: 20px;
+}
+
+.themes-section .item-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.item-card {
+.statuslines-section .item-grid {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.themes-section .item-card {
   flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+}
+
+.statuslines-section .item-card {
+  display: grid;
+  justify-items: center;
   text-align: center;
 }
 
