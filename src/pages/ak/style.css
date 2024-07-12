@@ -1,57 +1,107 @@
-.ak-main {
+.mainWrapper_src-theme-Layout-styles-module {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.ak-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  background-color: var(--primary-bg);
+}
+
+.ak-container {
+  max-width: 800px;
   padding: 40px;
+  background-color: var(--bright-black);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .ak-title {
   font-weight: bold;
-  font-size: 6rem;
-  color: transparent;
-  background: linear-gradient(
-    to right,
-    var(--normal-blue) 0%,
-    var(--normal-magenta) 20%,
-    var(--normal-blue) 70%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-decoration: none;
-}
-
-.ak-list {
-  font-size: 1.5rem;
-  padding-left: 2rem;
+  font-size: 3rem;
   color: var(--primary-fg);
+  margin-bottom: 20px;
 }
 
-.ak-link {
-  color: var(--normal-blue);
-  text-decoration: none;
-}
-
-.ak-link:hover {
-  text-decoration: underline;
-  color: var(--bright-cyan);
+.ak-intro {
+  font-size: 1.5rem;
+  color: var(--primary-fg);
+  margin-bottom: 30px;
 }
 
 .ak-project-list {
-  font-size: 1.2em;
-  list-style-type: circle;
-  padding-left: 4rem;
+  display: flex;
+  list-style: disc;
+  gap: 20px;
+  padding: 0;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .ak-project-item {
-  color: var(--primary-fg);
-  margin-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 .ak-project-link {
   color: var(--normal-blue);
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .ak-project-link:hover {
   text-decoration: underline;
-  color: var(--bright-cyan);
+  color: var(--normal-blue);
+}
+
+@media screen and (max-width: 996px) {
+  .ak-container {
+    padding: 30px;
+    padding-inline: 30px;
+    background-color: var(--bright-black);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .ak-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary-fg);
+    margin-bottom: 20px;
+  }
+
+  .ak-intro {
+    font-size: 1.5rem;
+    color: var(--primary-fg);
+    margin-bottom: 30px;
+  }
+
+  .ak-project-list {
+    display: flex;
+    list-style: disc;
+    gap: 0px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ak-project-item {
+    margin-bottom: 5px;
+  }
+
+  .ak-project-link {
+    color: var(--normal-blue);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .ak-project-link:hover {
+    text-decoration: underline;
+    color: var(--normal-blue);
+  }
 }
