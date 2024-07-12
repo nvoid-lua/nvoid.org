@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "@theme/Layout";
-import "./style.css"; // Assuming you have a styles.css file for your CSS
+import "./style.css";
 
 const Showcase = () => {
   return (
