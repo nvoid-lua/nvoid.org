@@ -69,11 +69,11 @@ const config = {
           ],
         },
         ...links,
-        ...github,
         {
           type: "search",
           position: "right",
         },
+        ...github,
       ],
     },
     prism: {
