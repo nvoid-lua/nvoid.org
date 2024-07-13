@@ -80,6 +80,10 @@
 
 /* Responsive styles */
 @media (max-width: 996px) {
+  .content-section {
+    padding: 5px;
+  }
+
   .showcase-container {
     flex-direction: column;
     padding: 10px;
@@ -89,7 +93,11 @@
     flex: 1 1 100%;
   }
 
-  .item-grid {
+  .themes-section .item-grid,
+  .statuslines-section .item-grid {
+    display: grid;
+    justify-items: center;
+    text-align: center;
     gap: 10px;
   }
 
