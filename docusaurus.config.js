@@ -51,11 +51,29 @@ const config = {
       },
       items: [
         {
-          type: "search",
-          position: "right",
+          label: "Get Started",
+          position: "left",
+          items: [
+            {
+              label: "Installation",
+              to: "/docs/install/",
+            },
+            {
+              label: "Configuration",
+              to: "/docs/configuration/",
+            },
+            {
+              label: "Features",
+              to: "/docs/features/",
+            },
+          ],
         },
         ...links,
         ...github,
+        {
+          type: "search",
+          position: "right",
+        },
       ],
     },
     prism: {
