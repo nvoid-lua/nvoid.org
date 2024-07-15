@@ -4,7 +4,7 @@ import "./style.css"; // Assuming you have a styles.css file for your CSS
 
 const Ak = () => {
   return (
-    <Layout title="Ak" description="Ak">
+    <Layout title="Acknowledgements" description="Ak">
       <main className="ak-main">
         <div className="ak-container">
           <h1 className="ak-title">Special Thanks To</h1>

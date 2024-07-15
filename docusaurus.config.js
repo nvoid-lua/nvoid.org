@@ -42,12 +42,11 @@ const config = {
     announcementBar: {
       content: ` ⭐️If you like Nvoid, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvoid-lua/nvoid">GitHub</a> ⭐️`,
     },
-    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: "Nvoid",
       logo: {
-        alt: "Nvoid Logo",
-        src: "img/nvoid_logo.svg",
+        alt: " ",
+        src: " ",
       },
       items: [
         {

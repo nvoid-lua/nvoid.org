@@ -9,7 +9,7 @@ import Features from "@site/src/components/Features";
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+    <Layout title="" description={siteConfig.tagline}>
       <main>
         <Hero />
         <Preview />
