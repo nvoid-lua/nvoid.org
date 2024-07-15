@@ -204,7 +204,6 @@ html[data-theme="dark"] {
 }
 
 .navbar__link,
-.menu__link,
 .navbar__items,
 .akText {
   font-weight: normal;
@@ -217,11 +216,6 @@ html[data-theme="dark"] {
 .link:hover .akText {
   text-decoration: none;
   color: var(--normal-blue);
-}
-
-.menu__link {
-  padding: 0;
-  margin-top: 0.25rem;
 }
 
 .scText {
@@ -270,5 +264,23 @@ html[data-theme="dark"] {
     border-bottom: 0px;
     border-radius: var(--ifm-global-radius);
     color: var(--normal-black);
+  }
+
+  .menu__link {
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--WHITE);
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0.25rem;
+  }
+
+  .menu__link:hover {
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--normal-blue);
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0.25rem;
   }
 }
