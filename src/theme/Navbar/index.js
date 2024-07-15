@@ -10,7 +10,7 @@ import NavbarColorModeToggle from "@theme/Navbar/ColorModeToggle";
 import SearchBar from "@theme/SearchBar";
 import NavbarMobileSidebarToggle from "@theme/Navbar/MobileSidebar/Toggle";
 import NavbarSearch from "@theme/Navbar/Search";
-import NavbarLogo from "../../../static/img/icons/nvoid.svg";
+import NavbarLogo from "../../../static/icons/nvoid.svg";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 function useNavbarItems() {

@@ -203,26 +203,25 @@ html[data-theme="dark"] {
   font-size: 20px;
 }
 
-.navbar__items {
-  font-weight: normal;
-  font-size: 20px;
-  color: var(--WHITE);
-  text-decoration: none;
-}
-.navbar__items:hover() {
-  text-decoration: none;
-  color: var(--normal-blue);
-}
-
+.navbar__link,
+.menu__link,
+.navbar__items,
 .akText {
   font-weight: normal;
   font-size: 20px;
   color: var(--WHITE);
   text-decoration: none;
 }
+
+.navbar__items:hover,
 .link:hover .akText {
   text-decoration: none;
   color: var(--normal-blue);
+}
+
+.menu__link {
+  padding: 0;
+  margin-top: 0.25rem;
 }
 
 .scText {

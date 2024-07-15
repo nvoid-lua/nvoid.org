@@ -3,8 +3,8 @@ import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import Dot from "../../../static/img/icons/circle.svg";
-import DotA from "../../../static/img/icons/circleA.svg";
+import Dot from "../../../static/icons/circle.svg";
+import DotA from "../../../static/icons/circleA.svg";
 
 const ArrowLeftIcon = () => (
   <svg

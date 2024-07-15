@@ -3,7 +3,7 @@ import { useNavbarMobileSidebar } from "@docusaurus/theme-common/internal";
 import { translate } from "@docusaurus/Translate";
 import NavbarColorModeToggle from "@theme/Navbar/ColorModeToggle";
 import IconClose from "@theme/Icon/Close";
-import NavbarLogo from "../../../../../static/img/icons/nvoid.svg";
+import NavbarLogo from "../../../../../static/icons/nvoid.svg";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 
