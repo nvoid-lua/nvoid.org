@@ -189,7 +189,7 @@
 }
 
 .btn2::after {
-  content: "Config";
+  content: "Docs";
   font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
   background: linear-gradient(to right, var(--normal-blue), var(--normal-red));

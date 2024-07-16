@@ -23,7 +23,7 @@ const Hero = () => {
             </Link>
             <Link
               className={classnames("btn2 button--lg", styles.btn2)}
-              to={useBaseUrl("/docs/configuration")}
+              to={useBaseUrl("/ds")}
             ></Link>
           </div>
         </div>

@@ -25,6 +25,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          breadcrumbs: true,
         },
         blog: {
           showReadingTime: true,
@@ -52,6 +53,7 @@ const config = {
         {
           label: "Get Started",
           position: "left",
+          to: "/ds",
           items: [
             {
               label: "Installation",
