@@ -4,6 +4,7 @@ const generateLink = (url, content, className) => {
 
 // Array to store link media links with SVG icons
 const links = [
+  generateLink("/ds", "Docs", "akText"),
   generateLink("/ak", "Acknowledgements", "akText"),
   generateLink("/sc", "Showcase", "scText"),
 ];

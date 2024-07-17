@@ -50,25 +50,6 @@ const config = {
         src: " ",
       },
       items: [
-        {
-          label: "Get Started",
-          position: "left",
-          to: "/ds",
-          items: [
-            {
-              label: "Installation",
-              to: "/docs/install/",
-            },
-            {
-              label: "Configuration",
-              to: "/docs/configuration/",
-            },
-            {
-              label: "Features",
-              to: "/docs/features/",
-            },
-          ],
-        },
         ...links,
         {
           type: "search",
