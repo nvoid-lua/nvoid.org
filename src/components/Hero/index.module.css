@@ -89,8 +89,8 @@
 }
 
 .btn1 {
+  display: flex;
   position: relative;
-  display: inline-block;
   padding: calc(
       var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
     )
@@ -112,7 +112,15 @@
   );
   background-size: 400%;
   border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
   z-index: 1;
+}
+
+.Arrowsvg {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .btn1:hover {
@@ -121,6 +129,7 @@
   text-decoration: none;
   font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
   font-weight: var(--ifm-button-font-weight);
+  gap: 10px;
 }
 
 .btn1:before {

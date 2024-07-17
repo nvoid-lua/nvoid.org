@@ -6,6 +6,7 @@ import styles from "./index.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import classnames from "classnames";
 import Description from "./Description";
+import Arrow from "../../../static/icons/arrow.svg";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
               to={useBaseUrl("/docs/install")}
             >
               Get Started
+              <Arrow className={styles.Arrowsvg} />
             </Link>
             <Link
               className={classnames("btn2 button--lg", styles.btn2)}
