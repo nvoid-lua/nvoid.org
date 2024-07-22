@@ -5,9 +5,10 @@ import { useLocation } from "@docusaurus/router";
 const MediumZoomWrapper = ({ children }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isScPage = location.pathname === "/sc";
 
   useEffect(() => {
-    if (isHomePage) return;
+    if ((isHomePage, isScPage)) return;
     const zoom = mediumZoom("img");
 
     zoom.on("open", () => {
@@ -21,7 +22,7 @@ const MediumZoomWrapper = ({ children }) => {
     return () => {
       zoom.detach();
     };
-  }, [location, isHomePage]);
+  }, [location, isHomePage, isScPage]);
 
   return <>{children}</>;
 };
