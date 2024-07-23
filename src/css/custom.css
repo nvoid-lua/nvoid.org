@@ -100,17 +100,9 @@ html[data-theme="dark"] {
   }
 }
 
-/* Asciinema css */
-@import url("asciinema-player/dist/bundle/asciinema-player.css");
-
 @font-face {
   font-family: "Terminal Glyphs";
   src: url("../../static/fonts/glyphs.ttf") format("truetype");
-}
-
-.asciinema-terminal {
-  font-family: "Terminal Glyphs", Consolas, Menlo, "Bitstream Vera Sans Mono",
-    monospace, "Powerline Symbols";
 }
 
 .navbar--fixed-top {

@@ -74,14 +74,6 @@ const config = {
   },
   plugins: [
     [
-      "./plugins/asciinema",
-      {
-        casts_folder: "static/casts",
-        font_name: "glyphs.ttf",
-        source_font: "src/theme/fura_code_nerd.ttf",
-      },
-    ],
-    [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
