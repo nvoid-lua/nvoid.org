@@ -31,8 +31,14 @@
     "subset-font": "^2.3.0"
   },
   "devDependencies": {
+    "@algolia/client-search": "^5.20.0",
     "@docusaurus/module-type-aliases": "3.4.0",
-    "prettier": "3.3.1"
+    "@types/react": "^19.0.8",
+    "prettier": "3.3.1",
+    "react-is": "^19.0.0",
+    "react-loadable": "^5.5.0",
+    "search-insights": "^2.17.3",
+    "typescript": "^5.7.3"
   },
   "browserslist": {
     "production": [
