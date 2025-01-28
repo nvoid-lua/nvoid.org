@@ -14,7 +14,6 @@ import Footer from "@theme/Footer";
 import LayoutProvider from "@theme/Layout/Provider";
 import ErrorPageContent from "@theme/ErrorPageContent";
 import styles from "./styles.module.css";
-import MediumZoomWrapper from "../../components/MediumZoomWrapper";
 
 export default function Layout(props) {
   const {
@@ -45,7 +44,7 @@ export default function Layout(props) {
         )}
       >
         <ErrorBoundary fallback={(params) => <ErrorPageContent {...params} />}>
-          <MediumZoomWrapper>{children}</MediumZoomWrapper>
+          {children}
         </ErrorBoundary>
       </div>
 

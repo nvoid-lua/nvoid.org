@@ -1,6 +1,5 @@
 import Layout from "@theme/Layout";
-import React, { useState, useEffect, useRef } from "react";
-import mediumZoom from "medium-zoom";
+import React, { useState } from "react";
 import "./style.css";
 
 const themes = {
@@ -31,14 +30,6 @@ const statuslines = ["Nvoid", "Minimal", "Evil"];
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("Themes");
-  const zoomRef = useRef(null);
-
-  useEffect(() => {
-    if (zoomRef.current) {
-      zoomRef.current.detach(); // Clean up the previous zoom instance
-    }
-    zoomRef.current = mediumZoom(".item-image");
-  }, [activeTab]);
 
   return (
     <Layout title="Showcase" description="Showcasing some screenshots">
