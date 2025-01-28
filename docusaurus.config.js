@@ -73,6 +73,7 @@ const config = {
     },
   },
   plugins: [
+    "docusaurus-plugin-medium-zoom",
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {

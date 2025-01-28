@@ -5669,6 +5669,13 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
+docusaurus-plugin-medium-zoom@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-medium-zoom/-/docusaurus-plugin-medium-zoom-0.0.2.tgz#e4b1fb7a0e057f84693185c6a1ba59bc197b6ccd"
+  integrity sha512-CIK6r8DnzXL+kGrZUDy1tT07qV1R4FM4v/NdJKbJYyqGoH/omwvqWHXwxPy/kQWskQwi6/fDuWppDkjXvpKLkQ==
+  dependencies:
+    medium-zoom "^1.1.0"
+
 docusaurus@^1.14.7:
   version "1.14.7"
   resolved "https://registry.yarnpkg.com/docusaurus/-/docusaurus-1.14.7.tgz#f51858ab643b29ec52264d6dd85e0d629e5b3a4a"
