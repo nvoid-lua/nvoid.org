@@ -4,6 +4,15 @@
   margin-bottom: 20px;
 }
 
+.medium-zoom-overlay {
+  z-index: 9999 !important; /* Ensures the overlay is above the Docusaurus top bar */
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Semi-transparent black */
+}
+
+.medium-zoom-image--opened {
+  z-index: 10000 !important; /* Ensures the zoomed image is above everything else */
+}
+
 .tab-button {
   background-color: var(--bright-black);
   padding: 10px 20px;
