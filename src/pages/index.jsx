@@ -2,9 +2,9 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 // Extras
-import Hero from "../components/Hero";
-import Preview from "@site/src/components/Preview";
-import Features from "@site/src/components/Features";
+import Hero from "./home/hero";
+import Preview from "./home/preview";
+import Features from "./home/features";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();

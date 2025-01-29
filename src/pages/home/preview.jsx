@@ -79,7 +79,7 @@ const Preview = () => {
   }, [imgSrc]);
 
   return (
-    <header className={clsx("feat feat--primary", styles.featBanner)}>
+    <header className={clsx("prev prev--primary", styles.prevBanner)}>
       <div className={`container ${styles.container}`}>
         <div className={styles.slider}>
           {loading && <Spinner />}
