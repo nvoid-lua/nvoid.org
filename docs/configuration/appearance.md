@@ -13,7 +13,7 @@ nvoid.ui.transparency = false -- true
 ```
 also you can open `Telescope themes` by hitting `leader` `f` `c` to preview the themes.
 
-- Nvoid comes with 21 [themes](/sc#themes).
+- Nvoid comes with 21 [themes](/showcase).
 
 :::note
 - If `nvoid.ui.Colorscheme = "theme"` in located in the your `config.lua` you can change it with Telescope.
@@ -101,7 +101,7 @@ You can find more colorschemes at [NvChad/base46](https://github.com/NvChad/base
 
 
 ## Statusline
-Nvoid use it's own statusline with 3 styles [(nvoid, minimal, evil)](/sc#statusline) you can change them with:
+Nvoid use it's own statusline with 3 styles [(nvoid, minimal, evil)](/showcase) you can change them with:
 ```lua
 nvoid.ui.statusline.style = "style"
 ```

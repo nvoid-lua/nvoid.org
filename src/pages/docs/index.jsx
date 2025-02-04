@@ -59,7 +59,7 @@ const Ds = () => {
             description="A demonstration of the features of"
           />
           <SquareLink
-            to="/sc"
+            to="/showcase"
             icon="showcase"
             title="Showcase"
             description="Showcasing the beauty of"
