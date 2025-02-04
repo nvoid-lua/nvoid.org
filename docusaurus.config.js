@@ -37,6 +37,11 @@ const config = {
     ],
   ],
   themeConfig: {
+    algolia: {
+      appId: "R2IYF7ETH7",
+      apiKey: "599cec31baffa4868cae4e79f180729b",
+      indexName: "docsearch",
+    },
     colorMode: {
       defaultMode: "dark",
     },
@@ -72,20 +77,7 @@ const config = {
       ],
     },
   },
-  plugins: [
-    "docusaurus-plugin-medium-zoom",
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: ["en"],
-        indexDocs: true,
-        indexBlog: false,
-        indexPages: false,
-        explicitSearchResultPath: true,
-      },
-    ],
-  ],
+  plugins: ["docusaurus-plugin-medium-zoom"],
 
   customFields: {
     previewImgs: [
