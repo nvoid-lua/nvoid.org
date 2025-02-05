@@ -2,7 +2,7 @@
 
 <details>
 <summary>Neoivm 0.9.0+</summary>
-<h2 id="#heading-id">I'm a heading that will not show up in the TOC</h2>
+<h2 id="#heading-id"></h2>
 
 ## If you're new to NeoVim/Vim
 I strongly encourage you to learn how to use NeoVim/Vim, as it's more than a normal text editor.
