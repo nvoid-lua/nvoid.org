@@ -38,6 +38,17 @@ html[data-theme="light"] {
   --ifm-navbar-background-color: var(--primary-bg);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="%23414868" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  --docsearch-key-gradient: var(--primary-bg);
+  --docsearch-key-shadow: var(--primary-fg);
+  --docsearch-text-color: var(--primary-fg);
+  --docsearch-modal-background: var(--primary-bg);
+  --docsearch-modal-shadow: inset 1px 1px 0 0 var(--primary-bg);
+  --docsearch-searchbox-focus-background: var(--normal-white);
+  --docsearch-hit-color: var(--primary-fg);
+  --docsearch-hit-shadow: none;
+  --docsearch-hit-background: var(--normal-white);
+  --docsearch-footer-background: var(--normal-white);
+  --docsearch-muted-color: var(--primary-fg);
 }
 
 html[data-theme="dark"] {
@@ -71,6 +82,17 @@ html[data-theme="dark"] {
   --ifm-navbar-background-color: var(--normal-black);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="%23c1caf4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  --docsearch-key-gradient: var(--primary-bg) !important;
+  --docsearch-key-shadow: var(--primary-fg) !important;
+  --docsearch-text-color: var(--primary-fg) !important;
+  --docsearch-modal-background: var(--primary-bg) !important;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 var(--primary-bg) !important;
+  --docsearch-searchbox-focus-background: var(--normal-black) !important;
+  --docsearch-hit-color: var(--primary-fg) !important;
+  --docsearch-hit-shadow: none;
+  --docsearch-hit-background: var(--normal-black) !important;
+  --docsearch-footer-background: var(--normal-black) !important;
+  --docsearch-muted-color: var(--primary-fg) !important;
 }
 
 * {
@@ -238,6 +260,19 @@ html[data-theme="dark"] {
 
 .navbar {
   transition: display 0.3s ease-in-out;
+}
+
+.algolia-autocomplete {
+  z-index: 9999 !important;
+}
+
+.DocSearch-Container {
+  z-index: 9999 !important;
+}
+
+.DocSearch-Button {
+  background: var(--primary-bg) !important;
+  color: var(--primary-fg) !important;
 }
 
 @media screen and (max-width: 996px) {

@@ -37,6 +37,13 @@ const config = {
     ],
   ],
   themeConfig: {
+    algolia: {
+      appId: "STYUXR7O2X",
+      apiKey: "a5b9eac8ffb7843e04347ed63f9c26ab",
+      indexName: "nvoid",
+      contextualSearch: true,
+      searchParameters: {},
+    },
     colorMode: {
       defaultMode: "dark",
     },
@@ -49,14 +56,7 @@ const config = {
         alt: " ",
         src: " ",
       },
-      items: [
-        ...links,
-        {
-          type: "search",
-          position: "right",
-        },
-        ...github,
-      ],
+      items: [...links, ...github],
     },
     prism: {
       theme: codeTheme,
@@ -72,20 +72,7 @@ const config = {
       ],
     },
   },
-  plugins: [
-    "docusaurus-plugin-medium-zoom",
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        hashed: true,
-        language: ["en"],
-        indexDocs: true,
-        indexBlog: false,
-        indexPages: false,
-        explicitSearchResultPath: true,
-      },
-    ],
-  ],
+  plugins: ["docusaurus-plugin-medium-zoom"],
 
   customFields: {
     previewImgs: [
